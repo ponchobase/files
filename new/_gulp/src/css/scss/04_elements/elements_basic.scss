@@ -1,0 +1,75 @@
+/************************  *************************/
+
+/* 			   Basic HTML - Desktop  	       	   */
+
+/************************  *************************/
+
+// <html> Defines an HTML document
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: $font-size-5;
+    height: 100%;
+    line-height: 1.5;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+}
+
+// * Selects all elements
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    -moz-font-feature-settings: "lnum" !important;
+    -ms-font-feature-settings: "lnum" !important;
+    -webkit-font-feature-settings: "lnum" !important;
+    -o-font-feature-settings: "lnum" !important;
+    font-feature-settings: "lnum" !important;
+}
+
+// <body> Defines the document's body
+body {
+    background: var(--poncho_blue_dark);
+    color: var(--poncho_white);
+    font-family: 'Source Sans 3', sans-serif;
+    height: 100%;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+// <h1> to <h6> Defines HTML headings
+// <p> Defines a paragraph
+// <br> Inserts a single line break
+// <hr>	Defines a thematic change in the content
+
+/************************  *************************/
+
+/* 	           Basic HTML - Mobile  		       */
+
+/************************  *************************/
+
+@include media("xxl") {}
+
+@include media("xl") {}
+
+@include media("lg") {}
+
+@include media("md") {}
+
+@include media("sm") {}
+
+@include media("xs") {}
+
+@include media("xxs") {}
+
+/************************  *************************/
+
+/* 			   Basic HTML - Print  			       */
+
+/************************  *************************/
+
+@media print {}

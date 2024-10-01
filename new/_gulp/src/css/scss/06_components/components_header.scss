@@ -1,0 +1,55 @@
+/************************  *************************/
+
+/* 			      Header - Desktop 		           */
+
+/************************  *************************/
+
+.header {
+    align-items: center;
+    background: var(--poncho_yellow);
+    border: 2px solid var(--poncho_white);
+    border-radius: 66px;
+    display: flex;
+    margin: 30px;
+    padding: 20px;
+
+    .logo {
+        a {
+            float: left;
+            line-height: 0;
+
+            img {
+                max-width: 150px;
+                width: 150px;
+            }
+        }
+    }
+}
+
+/************************  *************************/
+
+/* 	              Header - Mobile  	               */
+
+/************************  *************************/
+
+@include media("xxl") {}
+
+@include media("xl") {}
+
+@include media("lg") {}
+
+@include media("md") {}
+
+@include media("sm") {}
+
+@include media("xs") {}
+
+@include media("xxs") {}
+
+/************************  *************************/
+
+/* 			      Header - Print  		           */
+
+/************************  *************************/
+
+@media print {}
