@@ -771,6 +771,7 @@ a {
   color: var(--poncho_grey_dark);
 }
 .main .home .right img {
+  float: left;
   max-width: 500px;
 }
 
