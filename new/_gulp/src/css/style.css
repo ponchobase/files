@@ -9,6 +9,8 @@
   --poncho_blue_hover: #0103ff;
   --poncho_blue_dark: #1d1a7a;
   --poncho_green: #14c85c;
+  --poncho_grey: #eff2f5;
+  --poncho_grey_dark: #545454;
   --poncho_white: #fff;
   --poncho_yellow: #ff9900;
 }
@@ -321,7 +323,7 @@ html {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-family: "Source Sans 3", sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   height: 100%;
   line-height: 1.5;
   overflow-x: hidden;
@@ -368,15 +370,15 @@ h6,
 
 h1,
 .h1 {
-  font-size: 48px;
-  font-size: 2.4rem;
+  font-size: 50px;
+  font-size: 2.2727272727rem;
   line-height: 2rem;
 }
 
 h2,
 .h2 {
   font-size: 28px;
-  font-size: 1.4rem;
+  font-size: 1.2727272727rem;
   line-height: 1.75rem;
 }
 
@@ -543,11 +545,11 @@ img {
 }
 
 .padding-left {
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .padding-right {
-  padding-right: 20px;
+  padding-right: 10px;
 }
 
 .right {
@@ -561,12 +563,12 @@ img {
 }
 .row--max {
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1380px;
   position: relative;
 }
 .row--max-padding {
   margin: 0 auto;
-  max-width: 1280px;
+  max-width: 1380px;
   padding: 0 2rem;
   position: relative;
 }
@@ -710,7 +712,7 @@ img {
   margin: 100px 30px 50px;
 }
 .main .home .left {
-  padding-right: 3rem;
+  padding-right: 4rem;
 }
 .main .home .left h1 {
   display: inline-block;
@@ -724,12 +726,15 @@ img {
   display: inline-block;
   padding: 5px;
 }
+.main .home .left .links li:first-child {
+  padding-left: 0;
+}
 .main .home .left .links li a {
   border-radius: 50%;
   margin: 0;
   padding: 0;
-  width: 52px;
-  height: 52px;
+  width: 62px;
+  height: 62px;
   overflow: hidden;
 }
 .main .home .left .links li a img {
@@ -737,8 +742,28 @@ img {
   width: 100%;
   height: 100%;
 }
+.main .home .left .contract {
+  background: var(--poncho_grey);
+  border-radius: 10px;
+  margin: 30px 0 0;
+  padding-right: 10px;
+}
+.main .home .left .contract img {
+  height: 50px;
+  width: 50px;
+}
+.main .home .left .contract input {
+  background: var(--poncho_grey);
+  border: 0;
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+}
+.main .home .left .contract i {
+  color: var(--poncho_grey_dark);
+}
 .main .home .right img {
-  max-width: 450px;
+  max-width: 500px;
 }
 
 /************************  *************************/

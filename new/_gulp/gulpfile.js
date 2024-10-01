@@ -14,6 +14,7 @@ import sourcemaps from 'gulp-sourcemaps';
 gulp.task('dist-css', () => {
     return gulp.src([
         // Vendor
+        './src/css/vendor/all.min.css',
         // Custom
         './src/css/style.css.map',
         './src/css/style.css'

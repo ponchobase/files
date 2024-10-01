@@ -18,7 +18,7 @@
         margin: 100px 30px 50px;
 
         .left {
-            padding-right: 3rem;
+            padding-right: 4rem;
 
             h1 {
                 display: inline-block;
@@ -29,16 +29,21 @@
                 margin: 0;
                 padding: 0;
 
+
                 li {
                     display: inline-block;
                     padding: 5px;
+
+                    &:first-child {
+                        padding-left: 0;
+                    }
 
                     a {
                         border-radius: 50%;
                         margin: 0;
                         padding: 0;
-                        width: 52px;
-                        height: 52px;
+                        width: 62px;
+                        height: 62px;
                         overflow: hidden;
 
                         img {
@@ -49,11 +54,35 @@
                     }
                 }
             }
+
+            .contract {
+                background: var(--poncho_grey);
+                border-radius: 10px;
+                margin: 30px 0 0;
+                padding-right: 10px;
+
+                img {
+                    height: 50px;
+                    width: 50px;
+                }
+                
+                input {
+                    background: var(--poncho_grey);
+                    border: 0;
+                    border-radius: 10px;
+                    padding: 15px;
+                    width: 100%;
+                }
+
+                i {
+                    color: var(--poncho_grey_dark);
+                }
+            }
         }
 
         .right {
             img {
-                max-width: 450px;
+                max-width: 500px;
             }
         }
     }
