@@ -5,6 +5,8 @@
 /* 			     	  Variables  	       	       */
 /************************  *************************/
 :root {
+  --poncho_blue: #1d1fff;
+  --poncho_blue_hover: #0103ff;
   --poncho_blue_dark: #1d1a7a;
   --poncho_white: #fff;
   --poncho_yellow: #ff9900;
@@ -365,6 +367,31 @@ body {
 /************************  *************************/
 /* 	      Forms & Inputs - Desktop  	       	   */
 /************************  *************************/
+button,
+.btn {
+  background: var(--poncho_white);
+  border: 0;
+  border-radius: 25px;
+  box-shadow: none;
+  color: var(--poncho_white);
+  cursor: pointer;
+  display: inline-block;
+  line-height: normal;
+  margin: 5px 5px 5px 0;
+  padding: 10px 35px;
+  position: relative;
+  text-transform: uppercase;
+}
+button:last-child,
+.btn:last-child {
+  margin-right: 0;
+}
+button:hover,
+.btn:hover {
+  background: var(--poncho_white);
+  color: var(--poncho_white);
+}
+
 /************************  *************************/
 /* 	       Forms & Inputs - Mobile   	       	   */
 /************************  *************************/
@@ -383,6 +410,11 @@ body {
 /************************  *************************/
 /* 	              Images - Desktop  	       	   */
 /************************  *************************/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /************************  *************************/
 /* 	              Images - Mobile  	        	   */
 /************************  *************************/
@@ -446,23 +478,107 @@ body {
 /************************  *************************/
 /* 			     Objects - Desktop 			       */
 /************************  *************************/
+.col-50 {
+  float: left;
+  width: 50%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.row {
+  display: inline-block;
+  float: left;
+  width: 100%;
+}
+.row--max {
+  margin: 0 auto;
+  max-width: 1280px;
+  position: relative;
+}
+
 /************************  *************************/
 /* 	             Objects - Mobile  	 	           */
 /************************  *************************/
+@media screen and (max-width: 1024px) {
+  .col-50 {
+    width: 100%;
+  }
+}
 /************************  *************************/
 /* 			     Objects - Print  	               */
+/************************  *************************/
+/************************  *************************/
+/* 			      Button - Desktop 			       */
+/************************  *************************/
+.btn {
+  border: none;
+  font-weight: 600;
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+.btn--blue {
+  background: var(--poncho_blue);
+  color: var(--poncho_white);
+}
+.btn--blue:hover {
+  background: var(--poncho_blue_hover);
+  color: var(--poncho_white);
+}
+
+/************************  *************************/
+/* 	              Button - Mobile  	 	           */
+/************************  *************************/
+@media (hover: none) {
+  .btn--blue:hover {
+    background: var(--poncho_blue) !important;
+  }
+}
+/************************  *************************/
+/* 			      Button - Print  	               */
+/************************  *************************/
+/************************  *************************/
+/* 		         Flexbox - Desktop  	       	   */
+/************************  *************************/
+.flexbox {
+  display: flex;
+}
+.flexbox--align-center {
+  align-items: center;
+}
+.flexbox--vertical {
+  align-items: center;
+  justify-content: space-between;
+}
+
+/************************  *************************/
+/* 		         Flexbox - Mobile   		       */
+/************************  *************************/
+/************************  *************************/
+/* 			     Flexbox - Print  			       */
 /************************  *************************/
 /************************  *************************/
 /* 			      Header - Desktop 		           */
 /************************  *************************/
 .header {
+  margin: 0 auto;
+  position: relative;
+  z-index: 10000;
+}
+.header .inner {
   align-items: center;
   background: var(--poncho_yellow);
   border: 2px solid var(--poncho_white);
   border-radius: 66px;
   display: flex;
+  justify-content: space-between;
   margin: 30px;
-  padding: 20px;
+  padding: 10px 20px;
 }
 .header .logo a {
   float: left;
@@ -472,12 +588,56 @@ body {
   max-width: 150px;
   width: 150px;
 }
+.header nav {
+  margin: 20px;
+}
+.header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header nav ul li a {
+  color: var(--poncho_blue);
+  font-weight: bold;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.header nav ul li a:hover {
+  text-decoration: underline;
+}
 
 /************************  *************************/
 /* 	              Header - Mobile  	               */
 /************************  *************************/
 /************************  *************************/
 /* 			      Header - Print  		           */
+/************************  *************************/
+/************************  *************************/
+/* 		         Main - Desktop  	       	   */
+/************************  *************************/
+.background {
+  border-style: none;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.1;
+  position: absolute;
+  width: 100%;
+}
+
+.main .home {
+  margin: 100px 30px 50px;
+}
+.main .home .right img {
+  max-width: 500px;
+}
+
+/************************  *************************/
+/* 		         Main - Mobile   		       */
+/************************  *************************/
+/************************  *************************/
+/* 			     Main - Print  			       */
 /************************  *************************/
 /************************  *************************/
 /* 			      Trumps - Desktop 		           */

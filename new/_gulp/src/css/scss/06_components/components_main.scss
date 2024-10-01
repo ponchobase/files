@@ -1,0 +1,56 @@
+/************************  *************************/
+
+/* 		         Main - Desktop  	       	   */
+
+/************************  *************************/
+
+.background {
+    border-style: none;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.1;
+    position: absolute;
+    width: 100%;
+}
+
+.main {
+    .home {
+        margin: 100px 30px 50px;
+
+        .left {}
+
+        .right {
+            img {
+                max-width: 500px;
+            }
+        }
+    }
+}
+
+/************************  *************************/
+
+/* 		         Main - Mobile   		       */
+
+/************************  *************************/
+
+@include media("xxl") {}
+
+@include media("xl") {}
+
+@include media("lg") {}
+
+@include media("md") {}
+
+@include media("sm") {}
+
+@include media("xs") {}
+
+@include media("xxs") {}
+
+/************************  *************************/
+
+/* 			     Main - Print  			       */
+
+/************************  *************************/
+
+@media print {}

@@ -1,0 +1,46 @@
+/************************  *************************/
+
+/* 		         Flexbox - Desktop  	       	   */
+
+/************************  *************************/
+
+.flexbox {
+    display: flex;
+
+    &--align-center {
+        align-items: center;
+    }
+
+    &--vertical {
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+/************************  *************************/
+
+/* 		         Flexbox - Mobile   		       */
+
+/************************  *************************/
+
+@include media("xxl") {}
+
+@include media("xl") {}
+
+@include media("lg") {}
+
+@include media("md") {}
+
+@include media("sm") {}
+
+@include media("xs") {}
+
+@include media("xxs") {}
+
+/************************  *************************/
+
+/* 			     Flexbox - Print  			       */
+
+/************************  *************************/
+
+@media print {}

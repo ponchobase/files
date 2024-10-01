@@ -12,6 +12,32 @@
 
 /************************  *************************/
 
+.col-50 {
+    float: left;
+    width: 50%;
+}
+
+.left {
+    float: left;
+}
+
+.margin_main {}
+
+.right {
+    float: right;
+}
+
+.row {
+    display: inline-block;
+    float: left;
+    width: 100%;
+
+    &--max {
+        margin: 0 auto;
+        max-width: 1280px;
+        position: relative;
+    }
+}
 
 /************************  *************************/
 
@@ -23,7 +49,11 @@
 
 @include media("xl") {}
 
-@include media("lg") {}
+@include media("lg") {
+    .col-50 {
+        width: 100%;
+    }
+}
 
 @include media("md") {}
 
