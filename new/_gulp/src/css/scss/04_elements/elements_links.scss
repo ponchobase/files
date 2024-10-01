@@ -4,9 +4,13 @@
 
 /************************  *************************/
 
-// <a>	Defines a hyperlink
-// <link>	Defines the relationship between a document and an external resource (most used to link to style sheets)
-// <nav>	Defines navigation links
+// <a> Defines a hyperlink
+a {
+    text-underline-offset: 5px;
+}
+
+// <link> Defines the relationship between a document and an external resource (most used to link to style sheets)
+// <nav> Defines navigation links
 
 /************************  *************************/
 

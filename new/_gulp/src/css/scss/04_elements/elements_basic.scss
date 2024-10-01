@@ -73,6 +73,12 @@ h2,
 }
 
 // <p> Defines a paragraph
+p {
+    a {
+        color: var(--poncho_white);
+    }
+}
+
 // <br> Inserts a single line break
 // <hr>	Defines a thematic change in the content
 

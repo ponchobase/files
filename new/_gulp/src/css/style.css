@@ -382,6 +382,10 @@ h2,
   line-height: 1.75rem;
 }
 
+p a {
+  color: var(--poncho_white);
+}
+
 /************************  *************************/
 /* 	           Basic HTML - Mobile  		       */
 /************************  *************************/
@@ -466,6 +470,10 @@ img {
 /************************  *************************/
 /* 	                Links - Desktop  	       	   */
 /************************  *************************/
+a {
+  text-underline-offset: 5px;
+}
+
 /************************  *************************/
 /* 	                Links - Mobile  	       	   */
 /************************  *************************/
@@ -684,7 +692,6 @@ img {
   font-weight: bold;
   padding: 10px;
   text-decoration: none;
-  text-underline-offset: 5px;
 }
 .header nav ul li a:hover {
   text-decoration: underline;
