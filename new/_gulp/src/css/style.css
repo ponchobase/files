@@ -322,8 +322,8 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-family: "Source Sans 3", sans-serif;
-  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
   height: 100%;
   line-height: 1.5;
   overflow-x: hidden;
@@ -346,7 +346,7 @@ html {
 body {
   background: var(--poncho_blue_dark);
   color: var(--poncho_white);
-  font-family: "Source Sans 3", sans-serif;
+  font-family: "Montserrat", sans-serif;
   height: 100%;
   overflow-x: hidden;
   width: 100%;
@@ -371,14 +371,14 @@ h6,
 h1,
 .h1 {
   font-size: 50px;
-  font-size: 2.2727272727rem;
+  font-size: 2.5rem;
   line-height: 2rem;
 }
 
 h2,
 .h2 {
   font-size: 28px;
-  font-size: 1.2727272727rem;
+  font-size: 1.4rem;
   line-height: 1.75rem;
 }
 
@@ -718,8 +718,9 @@ img {
   display: inline-block;
 }
 .main .home .left .links {
+  display: inline-block;
   list-style: none;
-  margin: 0;
+  margin: 10px 0 0;
   padding: 0;
 }
 .main .home .left .links li {
