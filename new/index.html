@@ -67,37 +67,40 @@
 	<img class="background" src="/new/dist/img/background.png" alt="Background">
 
 	<!-- Header -->
-	<header class="row--max header">
-		<!-- Inner -->
-		<div class="inner">
-			<!-- Left -->
-			<div class="flexbox flexbox--align-center">
-				<!-- Logo -->
-				<div class="logo">
-					<a href="/" title="Home">
-						<img class="logo" src="/new/dist/img/logo.png" alt="Poncho on BASE">
-					</a>
+	<header class="row header">
+		<!-- Row max -->
+		<div class="row--max">
+			<!-- Inner -->
+			<div class="inner">
+				<!-- Left -->
+				<div class="flexbox flexbox--align-center">
+					<!-- Logo -->
+					<div class="logo">
+						<a href="/" title="Home">
+							<img class="logo" src="/new/dist/img/logo.png" alt="Poncho on BASE">
+						</a>
+					</div>
+
+					<!-- Nav -->
+					<nav>
+						<ul>
+							<li><a href="/#about">About</a></li>
+							<li><a href="/#poncho-pals">Poncho Pals</a></li>
+							<li><a href="/#tokenomics">Tokenomics</a></li>
+							<li><a href="/#roadmap">Roadmap</a></li>
+							<li><a href="/#faq">FAQ</a></li>
+						</ul>
+					</nav>
 				</div>
 
-				<!-- Nav -->
-				<nav>
-					<ul>
-						<li><a href="/#about">About</a></li>
-						<li><a href="/#poncho-pals">Poncho Pals</a></li>
-						<li><a href="/#tokenomics">Tokenomics</a></li>
-						<li><a href="/#roadmap">Roadmap</a></li>
-						<li><a href="/#faq">FAQ</a></li>
-					</ul>
-				</nav>
+				<!-- Buy now -->
+				<a class="btn btn--blue" href="https://app.uniswap.org/swap?chain=base&inputCurrency=ETH&outputCurrency=0xC2fE011C3885277c7F0e7ffd45Ff90cADc8ECD12" target="_blank">Buy Now</a>
 			</div>
-
-			<!-- Buy now -->
-			<a class="btn btn--blue" href="https://app.uniswap.org/swap?chain=base&inputCurrency=ETH&outputCurrency=0xC2fE011C3885277c7F0e7ffd45Ff90cADc8ECD12" target="_blank">Buy Now</a>
 		</div>
 	</header>
 
 	<!-- Main -->
-	<main class="main" id="main">
+	<main class="row main" id="main">
 		<div class="row--max-padding">
 			<!-- Home -->
 			<div class="home">
@@ -139,6 +142,35 @@
 			</div>
 		</div>
 	</main>
+
+	<!-- Footer -->
+	<footer class="row footer">
+		<!-- Row max -->
+		<div class="row--max">
+			<!-- Inner -->
+			<div class="inner">
+				<div class="row">
+					<!-- Copyright -->
+					<p class="font-small margin-none">
+						<!-- Year -->
+						<i class="far fa-copyright"></i> <span id="copyright-year"></span>
+						by Poncho On BASE. All rights reserved. <br>
+
+						<!-- Get year -->
+						<script>document.getElementById("copyright-year").innerHTML = new Date().getFullYear();</script>
+					</p>
+
+					<!-- Disclaimer -->
+					<p class="font-small margin-none">Disclaimer: <strong>$PONCHO</strong> is a meme coin with no intrinsic value or expectation of financial return.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scroll to top -->
+	<button class="btn btn--blue" id="scroll-top" type="button" title="Scroll to Top">
+		<i class="fas fa-chevron-up"></i>
+	</button>
 
 	<!-- JS vendor -->
 	<script src="/new/dist/js/poncho-vendor.min.js?v=1"></script>
