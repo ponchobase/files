@@ -2,38 +2,33 @@ function init_scroll() {
     try {
         // Vars
         var scroll_selector = "#scroll-top";
-        var last_scroll_top = 0;
+        var scroll_timeout = "";
 
         // On scroll
         $(window).on("scroll", throttle(function (event) {
-            console.log("scroll");
             // Vars
             var scroll_top = $(this).scrollTop();
+            var window_height = window.innerHeight;
+            window_height = window_height * 1.5;
 
             // Check if
-            if (scroll_top > last_scroll_top) {
-                // Downscroll
-                // Fade out
-                $(scroll_selector).fadeOut();
-            } else {
-                // Upscroll
-                // Vars
-                var window_height = window.innerHeight;
-                window_height = window_height * 1.5;
+            if (scroll_top > window_height) {
+                // Fade in
+                $(scroll_selector).fadeIn(100);
 
-                // Check if
-                if (scroll_top > window_height) {
-                    // Fade in
-                    $(scroll_selector).fadeIn();
-                } else {
+                // Clear timeout
+                clearTimeout(scroll_timeout)
+
+                // Set timeout
+                scroll_timeout = setTimeout(function () {
                     // Fade out
-                    $(scroll_selector).fadeOut();
-                }
+                    $(scroll_selector).fadeOut(100);
+                }, 2000);
+            } else {
+                // Fade out
+                $(scroll_selector).fadeOut(100);
             }
-
-            // Vars
-            last_scroll_top = scroll_top;
-        }, 700));
+        }, 100));
 
         // On click
         $(scroll_selector).off("click");

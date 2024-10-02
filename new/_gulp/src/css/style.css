@@ -773,7 +773,7 @@ a {
   left: 0;
   object-fit: cover;
   opacity: 0.1;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
 }
@@ -848,12 +848,13 @@ a {
 /* 	              Scroll - Desktop   		       */
 /************************  *************************/
 #scroll-top {
-  bottom: 70px;
+  bottom: 55px;
+  border-radius: 50%;
   display: none;
   padding: 10px;
   position: fixed;
-  right: 10px;
-  z-index: 9999;
+  right: 20px;
+  z-index: 10001;
 }
 #scroll-top:hover {
   text-decoration: none;
