@@ -28,6 +28,7 @@ Listen 91
 
 ### Production
 
+* Change Git author: https://stackoverflow.com/a/43231587
 * github-pages: https://github.com/ponchobase/files/deployments/github-pages
 
 ## Authors
