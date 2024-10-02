@@ -1,0 +1,54 @@
+/************************  *************************/
+
+/* 	                Misc - Desktop   	           */
+
+/************************  *************************/
+
+#skip-main {
+    height: 1px;
+    left: -999px;
+    margin: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    z-index: -10001;
+
+    &:active,
+    &:focus {
+        height: auto;
+        left: auto;
+        overflow: auto;
+        top: auto;
+        width: auto;
+        z-index: 10001;
+    }
+}
+
+/************************  *************************/
+
+/* 	                Misc - Mobile  	               */
+
+/************************  *************************/
+
+@include media("xxl") {}
+
+@include media("xl") {}
+
+@include media("lg") {}
+
+@include media("md") {}
+
+@include media("sm") {}
+
+@include media("xs") {}
+
+@include media("xxs") {}
+
+/************************  *************************/
+
+/* 		             Misc - Print  		           */
+
+/************************  *************************/
+
+@media print {}
