@@ -15,11 +15,11 @@ Official Poncho Website
 * XAMPP: https://www.apachefriends.org/download.html 
 * XAMPP / xamppfiles/ etc / httpd.conf
 ```
-Listen 91
+Listen 80
 ```
 * XAMPP / xamppfiles/ apache2 / conf / httpd.conf
 ```
-<VirtualHost *:91>
+<VirtualHost *:80>
     DocumentRoot "/Applications/XAMPP/xamppfiles/htdocs/ponchobase"
     ServerName local.ponchobase.com
     ServerAlias local.ponchobase.com
