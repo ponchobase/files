@@ -44,3 +44,4 @@ Listen 80
 
 * [Font Awesome](https://fontawesome.com/)
 * [jQuery](https://jquery.com/download/)
+* [RealFaviconGenerator](https://realfavicongenerator.net/)
