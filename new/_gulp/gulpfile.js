@@ -44,11 +44,14 @@ gulp.task("dist-js", () => {
     return gulp.src([
         // Custom
         // Init
-        "./src/js/custom/initialize.js"
+        "./src/js/custom/initialize.js",
+        // Common
+        "./src/js/custom/_common/_common.js",
+        "./src/js/custom/_common/scroll.js"
     ])
         .pipe(concat("poncho.min.js"))
         // .pipe(sourcemaps.init())
-        .pipe(uglify())
+        // .pipe(uglify())
         // .pipe(sourcemaps.write("."))
         .pipe(gulp.dest("../dist/js"));
 });

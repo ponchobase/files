@@ -7,18 +7,18 @@
 #skip-main {
     height: 1px;
     left: -999px;
-    margin: 10px;
+    margin: 30px 30px 0;
     overflow: hidden;
     position: absolute;
     top: auto;
     width: 1px;
     z-index: -10001;
 
-    &:active,
     &:focus {
         height: auto;
         left: auto;
         overflow: auto;
+        position: relative;
         top: auto;
         width: auto;
         z-index: 10001;

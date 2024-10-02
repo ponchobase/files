@@ -8,9 +8,10 @@
 // work will happen after initial project set-up. Adding new components and features usually makes up the vast majority of
 // development.
 
+@import "components_accessibility";
 @import "components_button";
 @import "components_flexbox";
 @import "components_footer";
 @import "components_header";
 @import "components_main";
-@import "components_misc";
+@import "components_scroll";

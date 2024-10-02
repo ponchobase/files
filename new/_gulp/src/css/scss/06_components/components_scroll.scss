@@ -1,0 +1,50 @@
+/************************  *************************/
+
+/* 	              Scroll - Desktop   		       */
+
+/************************  *************************/
+
+#scroll-top {
+    bottom: 70px;
+    display: none;
+    padding: 10px;
+    position: fixed;
+    right: 10px;
+    z-index: 9999;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &>i {
+        padding: 5px;
+    }
+}
+
+/************************  *************************/
+
+/* 	               Scroll - Mobile  		       */
+
+/************************  *************************/
+
+@include media("xxl") {}
+
+@include media("xl") {}
+
+@include media("lg") {}
+
+@include media("md") {}
+
+@include media("sm") {}
+
+@include media("xs") {}
+
+@include media("xxs") {}
+
+/************************  *************************/
+
+/* 		           Scroll - Print 	               */
+
+/************************  *************************/
+
+@media print {}

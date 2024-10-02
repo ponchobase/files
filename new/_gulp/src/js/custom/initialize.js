@@ -10,7 +10,8 @@ $(function () {
 
 function initialize_app() {
     try {
-        console.log("Poncho on BASE");
+        // Init scroll
+        init_scroll();
     } catch (e) {
         // console.error(e);
     }
