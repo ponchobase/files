@@ -11,6 +11,10 @@
 // <footer>	Defines a footer for a document or section
 // <main>	Specifies the main content of a document
 // <section>	Defines a section in a document
+section {
+    position: relative;
+}
+
 // <article>	Defines an article
 // <aside>	Defines content aside from the page content
 // <details>	Defines additional details that the user can view or hide

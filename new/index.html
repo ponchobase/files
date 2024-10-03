@@ -63,8 +63,8 @@
 	<!-- AODA skip to main content -->
 	<a class="btn btn--blue row" id="skip-main" href="#main">Skip to main content</a>
 
-	<!-- Background -->
-	<img class="background" src="/new/dist/img/background.png" alt="Background">
+	<!-- Body background -->
+	<img class="body-background" src="/new/dist/img/background.png?v=1" alt="Body Background">
 
 	<!-- Header -->
 	<header class="row header">
@@ -77,18 +77,18 @@
 					<!-- Logo -->
 					<div class="logo">
 						<a href="/" title="Home">
-							<img class="logo" src="/new/dist/img/logo.png" alt="Poncho on BASE">
+							<img class="logo" src="/new/dist/img/logo.png?v=1" alt="Poncho on BASE">
 						</a>
 					</div>
 
 					<!-- Nav -->
 					<nav>
 						<ul>
-							<li><a href="/#about">About</a></li>
-							<li><a href="/#poncho-pals">Poncho Pals</a></li>
-							<li><a href="/#tokenomics">Tokenomics</a></li>
-							<li><a href="/#roadmap">Roadmap</a></li>
-							<li><a href="/#faq">FAQ</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#poncho-pals">Poncho Pals</a></li>
+							<li><a href="#tokenomics">Tokenomics</a></li>
+							<li><a href="#roadmap">Roadmap</a></li>
+							<li><a href="#faq">FAQ</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -101,46 +101,222 @@
 
 	<!-- Main -->
 	<main class="row main" id="main">
-		<div class="row--max-padding">
-			<!-- Home -->
-			<div class="home">
-				<div class="flexbox flexbox--align-end">
-					<!-- Left -->
-					<div class="left">
-						<!-- Title -->
-						<div>
-							<h1 class="font-bolder margin-none padding-right">$PONCHO</h1>
-							<span class="no-wrap"><span class="font-bold font-green"><i class="fas fa-long-arrow-alt-up"></i> 0.1159 (21.92%)</span></span>
+		<!-- Home -->
+		<section class="row home" id="home">
+			<!-- Row max padding -->
+			<div class="row--max-padding">
+				<!-- inner -->
+				<div class="inner">
+					<div class="flexbox flexbox--align-end">
+						<!-- Left -->
+						<div class="left">
+							<!-- Title -->
+							<div>
+								<h1 class="font--bolder margin-none padding-right">$PONCHO</h1>
+								<span class="no-wrap"><span class="font--bold font--green"><i class="fas fa-long-arrow-alt-up"></i> 0.1159 (21.92%)</span></span>
+							</div>
+
+							<!-- Description -->
+							<p class="h2 font--normal">Poncho is the <strong>cutest</strong> cat on base with the strongest community. The friendly face that welcomes all <a href="https://wallet.coinbase.com/smart-wallet" target="_blank">Smart Wallet</a> users.</p>
+
+							<!-- Links -->
+							<ul class="links">
+								<li><a class="btn btn--blue" href="https://twitter.com/ponchoBASE" target="_blank" title="Twitter / X"><img src="/new/dist/img/twitter.png?v=1" alt="Twitter"></a></li>
+								<li><a class="btn btn--blue" href="https://t.me/ponchoBASE" target="_blank" title="Telegram"><img src="/new/dist/img/telegram.png?v=1" alt="Telegram"></a></li>
+								<li><a class="btn btn--blue" href="https://dexscreener.com/base/0x6fd34677ecdfae4cae732a5b22f1a3082917eb15" target="_blank" title="Dexscreener"><img src="/new/dist/img/dexscreener.png?v=1" alt="Dexscreener"></a></li>
+								<li><a class="btn btn--blue" href="https://coinmarketcap.com/currencies/poncho/" target="_blank" title="CoinMarketCap"><img src="/new/dist/img/coinmarketcap.png?v=1" alt="CoinMarketCap"></a></li>
+								<li><a class="btn btn--blue" href="https://www.coingecko.com/en/coins/poncho" target="_blank" title="CoinGecko"><img src="/new/dist/img/coingecko.png?v=1" alt="CoinGecko"></a></li>
+								<li><a class="btn btn--blue" href="https://medium.com/@ponchobase" target="_blank" title="Medium"><img src="/new/dist/img/medium.png?v=1" alt="Medium"></a></li>
+							</ul>
+
+							<!-- Address -->
+							<div class="flexbox flexbox--vertical contract">
+								<img src="/new/dist/img/base.png?v=1" alt="Base">
+								<input type="text" value="0xc2fe011c3885277c7f0e7ffd45ff90cadc8ecd12" readonly />
+								<i class="fa-solid fa-copy"></i>
+							</div>
 						</div>
 
-						<!-- Description -->
-						<p class="h2 font-normal">Poncho is the <strong>cutest</strong> cat on base with the strongest community. The friendly face that welcomes all <a href="https://wallet.coinbase.com/smart-wallet" target="_blank">Smart Wallet</a> users.</p>
-
-						<!-- Links -->
-						<ul class="links">
-							<li><a class="btn btn--blue" href="https://twitter.com/ponchoBASE" target="_blank" title="Twitter / X"><img src="/new/dist/img/twitter.png" alt="Twitter"></a></li>
-							<li><a class="btn btn--blue" href="https://t.me/ponchoBASE" target="_blank" title="Telegram"><img src="/new/dist/img/telegram.png" alt="Telegram"></a></li>
-							<li><a class="btn btn--blue" href="https://dexscreener.com/base/0x6fd34677ecdfae4cae732a5b22f1a3082917eb15" target="_blank" title="Dexscreener"><img src="/new/dist/img/dexscreener.png" alt="Dexscreener"></a></li>
-							<li><a class="btn btn--blue" href="https://coinmarketcap.com/currencies/poncho/" target="_blank" title="CoinMarketCap"><img src="/new/dist/img/coinmarketcap.png" alt="CoinMarketCap"></a></li>
-							<li><a class="btn btn--blue" href="https://www.coingecko.com/en/coins/poncho" target="_blank" title="CoinGecko"><img src="/new/dist/img/coingecko.png" alt="CoinGecko"></a></li>
-							<li><a class="btn btn--blue" href="https://medium.com/@ponchobase" target="_blank" title="Medium"><img src="/new/dist/img/medium.png" alt="Medium"></a></li>
-						</ul>
-
-						<!-- Address -->
-						<div class="flexbox flexbox--vertical contract">
-							<img src="/new/dist/img/base.png" alt="Base">
-							<input type="text" value="0xc2fe011c3885277c7f0e7ffd45ff90cadc8ecd12" readonly />
-							<i class="fa-solid fa-copy"></i>
+						<!-- Right -->
+						<div class="right">
+							<img src="/new/dist/img/poncho.png?v=1" alt="Poncho">
 						</div>
-					</div>
-
-					<!-- Right -->
-					<div class="right">
-						<img src="/new/dist/img/poncho.png" alt="Poncho">
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
+
+		<!-- FAQ -->
+		<section class="row background--blue-dark poncho-pals lazy-load" id="poncho-pals">
+			<!-- Row max padding -->
+			<div class="row--max-small-padding">
+				<!-- inner -->
+				<div class="inner">
+					<div class="row">
+						<!-- Background -->
+						<img class="background" src="/new/dist/img/background.png?v=1" alt="Background" loading="lazy">
+
+						<!-- Container -->
+						<div class="container">
+							<!-- Poncho Pals logo -->
+							<div><img class="logo" src="/new/dist/img/poncho_pals.png?v=1" alt="Poncho Pals" loading="lazy"></div>
+
+							<!-- Poncho Pals gif -->
+							<div><img class="gif" src="/new/dist/img/poncho_pals_gif.gif?v=1" alt="Poncho Pals GIF" loading="lazy"></div>
+
+							<!-- Explore the collection -->
+							<a class="btn btn--blue explore" href="https://opensea.io/collection/poncho-pals" target="_blank">
+								<img src="/new/dist/img/opensea.svg?v=1" alt="Open Sea" loading="lazy">
+								Explore The Collection
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- FAQ -->
+		<section class="row faq lazy-load" id="faq">
+			<!-- Row max padding -->
+			<div class="row--max-padding">
+				<!-- inner -->
+				<div class="inner">
+					<!-- FAQ -->
+					<h2 class="text-align-center">Frequently Asked Questions (FAQ)</h2>
+
+					<!-- Accordions -->
+					<div class="accordions">
+						<!-- Show / Hide buttons -->
+						<div class="row flexbox flexbox--center">
+							<button class="btn btn--dark font--small" data-accordions-all="show" type="button" title="Show All"><i class="fa-solid fa-angles-down margin-right-btn"></i> Show All</button> |
+							<button class="btn btn--dark font--small margin-left-btn" data-accordions-all="hide" type="button" title="Hide All"><i class="fa-solid fa-angles-up margin-right-btn"></i> Hide All</button>
+						</div>
+
+						<!-- Accordions container -->
+						<div class="accordions__container">
+							<!-- Accordion -->
+							<div class="accordion">
+								<!-- Header -->
+								<h3 class="accordion__header">
+									<!-- Trigger -->
+									<button class="trigger" type="button" aria-expanded="false">
+										<span class="title">What are the biggest tokens on base?</span>
+										<i class="fas fa-chevron-down" aria-hidden="true"></i>
+									</button>
+								</h3>
+
+								<!-- Panel -->
+								<div class="accordion__panel" role="region" hidden="">
+									<p>$PONCHO is positioned to become one of the biggest tokens on BASE this bull run and our family friendly approach is the most likely to attract all new crypto users.</p>
+								</div>
+							</div>
+
+							<!-- Accordion -->
+							<div class="accordion">
+								<!-- Header -->
+								<h3 class="accordion__header">
+									<!-- Trigger -->
+									<button class="trigger" type="button" aria-expanded="false">
+										<span class="title">How to buy crypto on base?</span>
+										<i class="fas fa-chevron-down" aria-hidden="true"></i>
+									</button>
+								</h3>
+
+								<!-- Panel -->
+								<div class="accordion__panel" role="region" hidden="">
+									<p>Although BASE has many Decentralized Exchanges (DEXs) one of the most popular is Uniswap and that is where you can easily buy $PONCHO with one click of a button. If you search on the Coinbase app you will find that all major BASE projects including $PONCHO can be found from there.</p>
+								</div>
+							</div>
+
+							<!-- Accordion -->
+							<div class="accordion">
+								<!-- Header -->
+								<h3 class="accordion__header">
+									<!-- Trigger -->
+									<button class="trigger" type="button" aria-expanded="false">
+										<span class="title">What are popular base NFTs?</span>
+										<i class="fas fa-chevron-down" aria-hidden="true"></i>
+									</button>
+								</h3>
+
+								<!-- Panel -->
+								<div class="accordion__panel" role="region" hidden="">
+									<p>BASE is becoming home to many great NFT collections and will likely only grow with time. The Poncho Pals collection is very popular among the $PONCHO community with many holders using theirs as a profile picture on Twitter/X and other platforms.</p>
+								</div>
+							</div>
+
+							<!-- Accordion -->
+							<div class="accordion">
+								<!-- Header -->
+								<h3 class="accordion__header">
+									<!-- Trigger -->
+									<button class="trigger" type="button" aria-expanded="false">
+										<span class="title">What is Poncho?</span>
+										<i class="fas fa-chevron-down" aria-hidden="true"></i>
+									</button>
+								</h3>
+
+								<!-- Panel -->
+								<div class="accordion__panel" role="region" hidden="">
+									<p>Poncho is the cutest cat on base with the strongest community and will serve as the friendly face that greets all new Smart Wallet users as their onboard for the first time into crypto.</p>
+								</div>
+							</div>
+
+							<!-- Accordion -->
+							<div class="accordion">
+								<!-- Header -->
+								<h3 class="accordion__header">
+									<!-- Trigger -->
+									<button class="trigger" type="button" aria-expanded="false">
+										<span class="title">What is base?</span>
+										<i class="fas fa-chevron-down" aria-hidden="true"></i>
+									</button>
+								</h3>
+
+								<!-- Panel -->
+								<div class="accordion__panel" role="region" hidden="">
+									<p>Poncho is the cutest cat on base with the strongest community and will serve as the friendly face that greets all new Smart Wallet users as their onboard for the first time into crypto.</p>
+								</div>
+							</div>
+
+							<!-- Accordion -->
+							<div class="accordion">
+								<!-- Header -->
+								<h3 class="accordion__header">
+									<!-- Trigger -->
+									<button class="trigger" type="button" aria-expanded="false">
+										<span class="title">Has Poncho ever been migrated?</span>
+										<i class="fas fa-chevron-down" aria-hidden="true"></i>
+									</button>
+								</h3>
+
+								<!-- Panel -->
+								<div class="accordion__panel" role="region" hidden="">
+									<p>BASE is a Layer 2 of Ethereum and designed to have extremely low transaction fees, very fast finality and the easiest method for new crypto users to get on-chain for the first time.</p>
+								</div>
+							</div>
+
+							<!-- Accordion -->
+							<div class="accordion">
+								<!-- Header -->
+								<h3 class="accordion__header">
+									<!-- Trigger -->
+									<button class="trigger" type="button" aria-expanded="false">
+										<span class="title">How to avoid getting scammed?</span>
+										<i class="fas fa-chevron-down" aria-hidden="true"></i>
+									</button>
+								</h3>
+
+								<!-- Panel -->
+								<div class="accordion__panel" role="region" hidden="">
+									<p>Do not click any links.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 
 	<!-- Footer -->
@@ -150,8 +326,11 @@
 			<!-- Inner -->
 			<div class="inner">
 				<div class="row">
+					<!-- Disclaimer -->
+					<p class="font--small margin-none">Disclaimer: <strong>$PONCHO</strong> is a meme coin with no intrinsic value or expectation of financial return.</p>
+
 					<!-- Copyright -->
-					<p class="font-small margin-none">
+					<p class="font--small margin-none">
 						<!-- Year -->
 						<i class="far fa-copyright"></i> <span id="copyright-year"></span>
 						by Poncho On BASE. All rights reserved. <br>
@@ -159,9 +338,6 @@
 						<!-- Get year -->
 						<script>document.getElementById("copyright-year").innerHTML = new Date().getFullYear();</script>
 					</p>
-
-					<!-- Disclaimer -->
-					<p class="font-small margin-none">Disclaimer: <strong>$PONCHO</strong> is a meme coin with no intrinsic value or expectation of financial return.</p>
 				</div>
 			</div>
 		</div>

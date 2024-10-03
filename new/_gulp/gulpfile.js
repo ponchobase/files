@@ -47,6 +47,7 @@ gulp.task("dist-js", () => {
         "./src/js/custom/initialize.js",
         // Common
         "./src/js/custom/_common/_common.js",
+        "./src/js/custom/_common/accordions.js",
         "./src/js/custom/_common/scroll.js"
     ])
         .pipe(concat("poncho.min.js"))

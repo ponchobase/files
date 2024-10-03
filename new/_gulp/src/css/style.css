@@ -11,7 +11,7 @@
   --poncho_green: #14c85c;
   --poncho_grey: #eff2f5;
   --poncho_grey_dark: #545454;
-  --poncho_white: #fff;
+  --poncho_white: #fbffef;
   --poncho_yellow: #ff9900;
 }
 
@@ -502,6 +502,10 @@ a {
 /************************  *************************/
 /* 	     Styles & Semantics - Desktop  	       	   */
 /************************  *************************/
+section {
+  position: relative;
+}
+
 /************************  *************************/
 /* 	     Styles & Semantics - Mobile  	       	   */
 /************************  *************************/
@@ -520,29 +524,34 @@ a {
 /************************  *************************/
 /* 			     Objects - Desktop 			       */
 /************************  *************************/
+.background--blue-dark {
+  background: var(--poncho_blue_dark);
+}
+
 .col-50 {
   float: left;
   width: 50%;
 }
 
-.font-bold {
+.font--bold {
   font-weight: 600;
 }
-
-.font-bolder {
+.font--bolder {
   font-weight: 700;
 }
-
-.font-normal {
-  font-weight: normal;
-}
-
-.font-green {
+.font--green {
   color: var(--poncho_green);
 }
-
-.font-small {
+.font--normal {
+  font-weight: normal;
+}
+.font--small {
   font-size: 0.85rem;
+}
+
+.lazy-load {
+  opacity: 0;
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 
 .left {
@@ -572,6 +581,7 @@ a {
 .row {
   display: inline-block;
   float: left;
+  position: relative;
   width: 100%;
 }
 .row--max {
@@ -584,6 +594,16 @@ a {
   max-width: 1380px;
   padding: 0 2rem;
   position: relative;
+}
+.row--max-small-padding {
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 0 2rem;
+  position: relative;
+}
+
+.text-align-center {
+  text-align: center;
 }
 
 /************************  *************************/
@@ -632,6 +652,141 @@ a {
 /************************  *************************/
 /************************  *************************/
 /* 		             Misc - Print  		           */
+/************************  *************************/
+/************************  *************************/
+/* 	           Accordion - Desktop   		       */
+/************************  *************************/
+.accordions {
+  margin: 20px auto;
+  max-width: 730px;
+}
+.accordions__container {
+  display: inline-block;
+  width: 100%;
+}
+.accordions__container .accordion {
+  -webkit-transition: margin 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background: var(--primary_white_light);
+  border: 1px solid var(--primary_grey_lightest);
+  color: var(--primary_dark);
+  position: relative;
+  text-align: left;
+  transition: margin 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  width: 100%;
+}
+.accordions__container .accordion:not(:first-child):before {
+  -webkit-transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background: var(--primary_grey_lightest);
+  content: "";
+  height: 1px;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  right: 0;
+  top: -1px;
+  transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.accordions__container .accordion:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.accordions__container .accordion:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.accordions__container .accordion__header {
+  -webkit-font-smoothing: auto;
+  margin: 0;
+  padding: 0;
+}
+.accordions__container .accordion__header .trigger {
+  align-items: center;
+  background: none;
+  color: var(--primary_dark);
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 20px;
+  width: 100%;
+}
+.accordions__container .accordion__header .trigger .title {
+  -webkit-transition: margin 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  display: flex;
+  flex-grow: 1;
+  font-weight: 600;
+  margin: 20px 10px 20px 0;
+  padding: 0;
+  text-align: left;
+  transition: margin 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.accordions__container .accordion__header .trigger i {
+  -webkit-transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transform: rotate(0deg);
+  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.accordions__container .accordion__panel {
+  color: var(--primary_grey);
+  display: none;
+  float: left;
+  line-height: 25px;
+  margin: 0 auto;
+  padding: 10px 20px 20px;
+  width: 100%;
+}
+.accordions__container .accordion__panel h1,
+.accordions__container .accordion__panel h2,
+.accordions__container .accordion__panel h3,
+.accordions__container .accordion__panel h4,
+.accordions__container .accordion__panel h5,
+.accordions__container .accordion__panel h6,
+.accordions__container .accordion__panel .h1,
+.accordions__container .accordion__panel .h2,
+.accordions__container .accordion__panel .h3,
+.accordions__container .accordion__panel .h4,
+.accordions__container .accordion__panel .h5,
+.accordions__container .accordion__panel .h6,
+.accordions__container .accordion__panel label {
+  color: var(--primary_dark);
+}
+.accordions__container .accordion--open {
+  -webkit-transition: border-width 0.1s linear, margin 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background: var(--primary_white_light);
+  border-top: 3px solid var(--primary_blue);
+  margin: 20px 0;
+  overflow: auto;
+  transition: border-width 0.1s linear, margin 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+}
+.accordions__container .accordion--open:first-child {
+  margin-top: 0;
+}
+.accordions__container .accordion--open:last-child {
+  margin-bottom: 0;
+}
+.accordions__container .accordion--open .accordion__header .trigger {
+  font-weight: bold;
+}
+.accordions__container .accordion--open .accordion__header .trigger i {
+  transform: rotate(180deg);
+}
+
+/************************  *************************/
+/* 	           Accordion - Mobile  		           */
+/************************  *************************/
+@media (hover: none) {
+  .accordions__container .accordion .accordion__header .trigger:hover {
+    background: var(--primary_white) !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .accordions__container .accordion__header .trigger {
+    padding: 0 15px;
+  }
+  .accordions__container .accordion__panel {
+    padding: 10px 15px 20px;
+  }
+}
+/************************  *************************/
+/* 		       Accordion - Print 	               */
 /************************  *************************/
 /************************  *************************/
 /* 			      Button - Desktop 			       */
@@ -765,86 +920,6 @@ a {
 /* 			      Header - Print  		           */
 /************************  *************************/
 /************************  *************************/
-/* 		         Main - Desktop  	       	   */
-/************************  *************************/
-.background {
-  border-style: none;
-  height: 100%;
-  left: 0;
-  object-fit: cover;
-  opacity: 0.1;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.main .home {
-  margin: 50px 30px;
-}
-.main .home .left {
-  padding-right: 4rem;
-}
-.main .home .left h1 {
-  display: inline-block;
-}
-.main .home .left .links {
-  display: inline-block;
-  list-style: none;
-  margin: 10px 0 0;
-  padding: 0;
-}
-.main .home .left .links li {
-  display: inline-block;
-  padding: 5px;
-}
-.main .home .left .links li:first-child {
-  padding-left: 0;
-}
-.main .home .left .links li a {
-  border-radius: 50%;
-  margin: 0;
-  padding: 0;
-  width: 62px;
-  height: 62px;
-  overflow: hidden;
-}
-.main .home .left .links li a img {
-  border-radius: 50%;
-  width: 100%;
-  height: 100%;
-}
-.main .home .left .contract {
-  background: var(--poncho_grey);
-  border-radius: 10px;
-  margin: 30px 0 0;
-  padding-right: 10px;
-}
-.main .home .left .contract img {
-  height: 50px;
-  width: 50px;
-}
-.main .home .left .contract input {
-  background: var(--poncho_grey);
-  border: 0;
-  border-radius: 10px;
-  padding: 15px;
-  width: 100%;
-}
-.main .home .left .contract i {
-  color: var(--poncho_grey_dark);
-}
-.main .home .right img {
-  float: left;
-  max-width: 500px;
-}
-
-/************************  *************************/
-/* 		         Main - Mobile   		       */
-/************************  *************************/
-/************************  *************************/
-/* 			     Main - Print  			       */
-/************************  *************************/
-/************************  *************************/
 /* 	              Scroll - Desktop   		       */
 /************************  *************************/
 #scroll-top {
@@ -868,6 +943,121 @@ a {
 /************************  *************************/
 /************************  *************************/
 /* 		           Scroll - Print 	               */
+/************************  *************************/
+/************************  *************************/
+/* 		        Sections - Desktop  	       	   */
+/************************  *************************/
+.body-background {
+  border-style: none;
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  opacity: 0.1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+section .inner {
+  display: inline-block;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 80px 50px;
+  width: 100%;
+  position: relative;
+}
+
+.home .left {
+  padding-right: 4rem;
+}
+.home .left h1 {
+  display: inline-block;
+}
+.home .left .links {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+}
+.home .left .links li {
+  display: inline-block;
+  padding: 5px;
+}
+.home .left .links li:first-child {
+  padding-left: 0;
+}
+.home .left .links li a {
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  width: 62px;
+  height: 62px;
+  overflow: hidden;
+}
+.home .left .links li a img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+.home .left .contract {
+  background: var(--poncho_grey);
+  border-radius: 10px;
+  margin: 30px 0 0;
+  padding-right: 10px;
+}
+.home .left .contract img {
+  height: 50px;
+  width: 50px;
+}
+.home .left .contract input {
+  background: var(--poncho_grey);
+  border: 0;
+  border-radius: 10px;
+  padding: 15px;
+  width: 100%;
+}
+.home .left .contract i {
+  color: var(--poncho_grey_dark);
+}
+.home .right img {
+  float: left;
+  max-width: 500px;
+}
+
+.poncho-pals img {
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+.poncho-pals .background {
+  border-radius: 25px;
+  border: 2px solid var(--poncho_white);
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.poncho-pals .container {
+  padding: 20px 50px;
+  text-align: center;
+}
+.poncho-pals .container .logo {
+  max-width: 463px;
+}
+.poncho-pals .container .gif {
+  border: 2px solid var(--poncho_white);
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+/************************  *************************/
+/* 		        Sections - Mobile   		       */
+/************************  *************************/
+/************************  *************************/
+/* 			    Sections - Print  			       */
 /************************  *************************/
 /************************  *************************/
 /* 			      Trumps - Desktop 		           */
