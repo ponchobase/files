@@ -1052,6 +1052,14 @@ section .inner {
   margin: 20px auto;
   max-width: 400px;
 }
+.poncho-pals .container .explore {
+  z-index: 2;
+}
+.poncho-pals .container .explore img {
+  height: 40px;
+  margin-right: 5px;
+  width: 40px;
+}
 
 /************************  *************************/
 /* 		        Sections - Mobile   		       */

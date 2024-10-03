@@ -122,14 +122,24 @@ section {
         padding: 20px 50px;
         text-align: center;
 
-        .logo{
+        .logo {
             max-width: 463px;
         }
-    
+
         .gif {
             border: 2px solid var(--poncho_white);
             margin: 20px auto;
             max-width: 400px;
+        }
+
+        .explore {
+            z-index: 2;
+
+            img {
+                height: 40px;
+                margin-right: 5px;
+                width: 40px;
+            }
         }
     }
 }
