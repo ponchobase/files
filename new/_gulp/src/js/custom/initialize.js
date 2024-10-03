@@ -18,6 +18,9 @@ function initialize_app() {
 
         // Init lazy load
         init_lazy_load();
+
+        // Init swipers
+        init_swipers();
         
         // Init scroll
         init_scroll();

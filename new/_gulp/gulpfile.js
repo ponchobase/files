@@ -15,6 +15,7 @@ gulp.task("dist-css", () => {
     return gulp.src([
         // Vendor
         "./src/css/vendor/all.min.css",
+        "./src/css/vendor/swiper.min.css",
         // Custom
         "./src/css/style.css.map",
         "./src/css/style.css"
@@ -30,7 +31,8 @@ gulp.task("dist-css", () => {
 gulp.task("dist-js-vendor", () => {
     return gulp.src([
         // Vendor
-        "./src/js/vendor/jquery.min.js"
+        "./src/js/vendor/jquery.min.js",
+        "./src/js/vendor/swiper.min.js"
     ])
         .pipe(concat("poncho-vendor.min.js"))
         // .pipe(sourcemaps.init())
@@ -48,7 +50,8 @@ gulp.task("dist-js", () => {
         // Common
         "./src/js/custom/_common/_common.js",
         "./src/js/custom/_common/accordions.js",
-        "./src/js/custom/_common/scroll.js"
+        "./src/js/custom/_common/scroll.js",
+        "./src/js/custom/_common/swipers.js"
     ])
         .pipe(concat("poncho.min.js"))
         // .pipe(sourcemaps.init())

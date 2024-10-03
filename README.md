@@ -8,16 +8,17 @@ Official Poncho Website
 
 ## Getting Started
 
-* GIT repo: https://github.com/ponchobase/files
+* GitHub repo: https://github.com/ponchobase/files
+* GitHub author: https://stackoverflow.com/a/43231587
 
 ### Local
 
 * XAMPP: https://www.apachefriends.org/download.html 
-* XAMPP / xamppfiles/ etc / httpd.conf
+* XAMPP / xamppfiles / etc / httpd.conf
 ```
 Listen 80
 ```
-* XAMPP / xamppfiles/ apache2 / conf / httpd.conf
+* XAMPP / xamppfiles / apache2 / conf / httpd.conf
 ```
 <VirtualHost *:80>
     DocumentRoot "/Applications/XAMPP/xamppfiles/htdocs/ponchobase"
@@ -28,7 +29,6 @@ Listen 80
 
 ### Production
 
-* Change Git author: https://stackoverflow.com/a/43231587
 * github-pages: https://github.com/ponchobase/files/deployments/github-pages
 
 ## Authors
