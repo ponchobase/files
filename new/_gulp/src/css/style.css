@@ -527,6 +527,16 @@ section {
 .background--blue-dark {
   background: var(--poncho_blue_dark);
 }
+.background--body {
+  border-style: none;
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  opacity: 0.1;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
 .col-50 {
   float: left;
@@ -947,17 +957,6 @@ section {
 /************************  *************************/
 /* 		        Sections - Desktop  	       	   */
 /************************  *************************/
-.body-background {
-  border-style: none;
-  height: 100%;
-  left: 0;
-  object-fit: cover;
-  opacity: 0.1;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
 section .inner {
   display: inline-block;
   margin: 0 auto;
@@ -966,27 +965,26 @@ section .inner {
   width: 100%;
   position: relative;
 }
-
-.home .left {
+section.home .left {
   padding-right: 4rem;
 }
-.home .left h1 {
+section.home .left h1 {
   display: inline-block;
 }
-.home .left .links {
+section.home .left .links {
   display: inline-block;
   list-style: none;
   margin: 10px 0 0;
   padding: 0;
 }
-.home .left .links li {
+section.home .left .links li {
   display: inline-block;
   padding: 5px;
 }
-.home .left .links li:first-child {
+section.home .left .links li:first-child {
   padding-left: 0;
 }
-.home .left .links li a {
+section.home .left .links li a {
   border-radius: 50%;
   margin: 0;
   padding: 0;
@@ -994,42 +992,41 @@ section .inner {
   height: 62px;
   overflow: hidden;
 }
-.home .left .links li a img {
+section.home .left .links li a img {
   border-radius: 50%;
   width: 100%;
   height: 100%;
 }
-.home .left .contract {
+section.home .left .contract {
   background: var(--poncho_grey);
   border-radius: 10px;
   margin: 30px 0 0;
   padding-right: 10px;
 }
-.home .left .contract img {
+section.home .left .contract img {
   height: 50px;
   width: 50px;
 }
-.home .left .contract input {
+section.home .left .contract input {
   background: var(--poncho_grey);
   border: 0;
   border-radius: 10px;
   padding: 15px;
   width: 100%;
 }
-.home .left .contract i {
+section.home .left .contract i {
   color: var(--poncho_grey_dark);
 }
-.home .right img {
+section.home .right img {
   float: left;
   max-width: 500px;
 }
-
-.poncho-pals img {
+section.poncho-pals img {
   position: relative;
   width: 100%;
   z-index: 2;
 }
-.poncho-pals .background {
+section.poncho-pals .background {
   border-radius: 25px;
   border: 2px solid var(--poncho_white);
   height: 100%;
@@ -1040,22 +1037,22 @@ section .inner {
   width: 100%;
   z-index: 1;
 }
-.poncho-pals .container {
+section.poncho-pals .container {
   padding: 20px 50px;
   text-align: center;
 }
-.poncho-pals .container .logo {
+section.poncho-pals .container .logo {
   max-width: 463px;
 }
-.poncho-pals .container .gif {
+section.poncho-pals .container .gif {
   border: 2px solid var(--poncho_white);
   margin: 20px auto;
   max-width: 400px;
 }
-.poncho-pals .container .explore {
+section.poncho-pals .container .explore {
   z-index: 2;
 }
-.poncho-pals .container .explore img {
+section.poncho-pals .container .explore img {
   height: 40px;
   margin-right: 5px;
   width: 40px;
