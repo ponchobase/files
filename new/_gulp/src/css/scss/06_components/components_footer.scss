@@ -33,11 +33,25 @@
 
 // @include media("xl") {}
 
-// @include media("lg") {}
+@include media("lg") {
+    .footer {
+        .inner {
+            margin: 20px;
+            padding: 20px;
+        }
+    }
+}
 
 // @include media("md") {}
 
-// @include media("sm") {}
+@include media("sm") {
+    .footer {
+        .inner {
+            margin: 15px;
+            padding: 15px 20px;
+        }
+    }
+}
 
 // @include media("xs") {}
 
