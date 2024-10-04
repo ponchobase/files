@@ -5,12 +5,13 @@
 /************************  *************************/
 
 #scroll-top {
-    bottom: 55px;
+    bottom: 30px;
     border-radius: 50%;
     display: none;
+    margin: 0;
     padding: 10px;
     position: fixed;
-    right: 20px;
+    right: 30px;
     z-index: 10001;
 
     &:hover {
@@ -32,11 +33,21 @@
 
 // @include media("xl") {}
 
-// @include media("lg") {}
+@include media("lg") {
+    #scroll-top {
+        bottom: 20px;
+        right: 20px;
+    }
+}
 
 // @include media("md") {}
 
-// @include media("sm") {}
+@include media("sm") {
+    #scroll-top {
+        bottom: 15px;
+        right: 15px;
+    }
+}
 
 // @include media("xs") {}
 

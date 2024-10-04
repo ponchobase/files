@@ -975,12 +975,13 @@ section {
 /* 	              Scroll - Desktop   		       */
 /************************  *************************/
 #scroll-top {
-  bottom: 55px;
+  bottom: 30px;
   border-radius: 50%;
   display: none;
+  margin: 0;
   padding: 10px;
   position: fixed;
-  right: 20px;
+  right: 30px;
   z-index: 10001;
 }
 #scroll-top:hover {
@@ -993,6 +994,18 @@ section {
 /************************  *************************/
 /* 	               Scroll - Mobile  		       */
 /************************  *************************/
+@media screen and (max-width: 1024px) {
+  #scroll-top {
+    bottom: 20px;
+    right: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #scroll-top {
+    bottom: 15px;
+    right: 15px;
+  }
+}
 /************************  *************************/
 /* 		           Scroll - Print 	               */
 /************************  *************************/
