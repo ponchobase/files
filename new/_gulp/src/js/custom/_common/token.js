@@ -1,5 +1,8 @@
 function read_token() {
     try {
+        // Define vars
+        var price_found = false;
+
         // Read token
         $.ajax({
             type: "GET",
@@ -25,6 +28,9 @@ function read_token() {
                         if (price_string) {
                             // Append
                             $("[data-token=price]").append(price_string);
+
+                            // Vars
+                            price_found = true;
                         }
                     }
                 } else {
@@ -32,10 +38,14 @@ function read_token() {
                 }
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
-                // console.error("error");
+                // console.error(errorThrown);
             }
         }).always(() => {
             // nprogress_end();
+            // Check if
+            if(!price_found){
+                console.log("not found");
+            }
         });
     } catch (e) {
         // console.error(e);
@@ -52,7 +62,7 @@ function read_token() {
 //             console.log(response);
 //         },
 //         error: function (XMLHttpRequest, textStatus, errorThrown) {
-//             // console.error("error");
+//             // console.error(errorThrown);
 //         }
 //     }).always(() => {
 //         // nprogress_end();
