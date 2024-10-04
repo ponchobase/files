@@ -18,8 +18,17 @@ section {
         .left {
             padding-right: 4rem;
     
-            h1 {
-                display: inline-block;
+            .heading {
+                margin: 0 0 20px;
+
+                h1 {
+                    display: inline-block;
+                }
+            }
+
+            .description {
+                font-size: $font-size-4;
+                font-size: $font-size-4-em;
             }
     
             .links {
@@ -165,7 +174,7 @@ section {
 @include media("sm") {
     section {
         .inner {
-            padding: 30px 15px;
+            padding: 50px 15px;
         }
 
         &.poncho-pals {

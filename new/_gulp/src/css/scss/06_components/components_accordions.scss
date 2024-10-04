@@ -47,9 +47,11 @@
 
             &__header {
                 -webkit-font-smoothing: auto;
+                color: var(--poncho_white);
+                font-size: 1rem;
                 margin: 0;
                 padding: 0;
-
+                
                 .trigger {
                     align-items: center;
                     background: none;
