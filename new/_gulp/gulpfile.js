@@ -53,7 +53,8 @@ gulp.task("dist-js", () => {
         "./src/js/custom/_common/accordions.js",
         "./src/js/custom/_common/charts.js",
         "./src/js/custom/_common/scroll.js",
-        "./src/js/custom/_common/swipers.js"
+        "./src/js/custom/_common/swipers.js",
+        "./src/js/custom/_common/token.js"
     ])
         .pipe(concat("poncho.min.js"))
         // .pipe(sourcemaps.init())

@@ -27,6 +27,9 @@ function initialize_app() {
         
         // Init scroll
         init_scroll();
+
+        // Read token
+        read_token();
     } catch (e) {
         // console.error(e);
     }

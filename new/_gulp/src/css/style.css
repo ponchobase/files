@@ -774,6 +774,8 @@ section {
 .accordions__container .accordion__panel {
   background: var(--poncho_blue_dark);
   border: 2px solid var(--poncho_white);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
   border-top: 0;
   color: var(--poncho_white);
   display: none;
