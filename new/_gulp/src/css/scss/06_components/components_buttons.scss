@@ -20,6 +20,17 @@
             color: var(--poncho_white);
         }
     }
+
+    &--transparent {
+        background: transparent;
+        border: none;
+        color: var(--poncho_white);
+
+        &:hover {
+            background: transparent;
+            color: var(--poncho_white);
+        }
+    }
 }
 
 /************************  *************************/

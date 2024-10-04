@@ -591,8 +591,11 @@ section {
   float: left;
 }
 
-.margin-none {
+.margin--none {
   margin: 0 !important;
+}
+.margin--none-right {
+  margin-right: 0;
 }
 
 .no-wrap {
@@ -843,6 +846,15 @@ section {
   background: var(--poncho_blue_hover);
   color: var(--poncho_white);
 }
+.button--transparent {
+  background: transparent;
+  border: none;
+  color: var(--poncho_white);
+}
+.button--transparent:hover {
+  background: transparent;
+  color: var(--poncho_white);
+}
 
 /************************  *************************/
 /* 	              Button - Mobile  	 	           */
@@ -866,6 +878,10 @@ section {
 }
 .flexbox--align-center {
   align-items: center;
+}
+.flexbox--center {
+  align-items: center;
+  justify-content: center;
 }
 .flexbox--vertical {
   align-items: center;
