@@ -27,7 +27,7 @@ function read_token() {
                         // Check if
                         if (price_string) {
                             // Append
-                            $("[data-token=price]").append(price_string);
+                            $("[data-token=price]").html(price_string);
 
                             // Vars
                             price_found = true;
@@ -43,10 +43,22 @@ function read_token() {
         }).always(() => {
             // nprogress_end();
             // Check if
-            if(!price_found){
+            if (!price_found) {
                 console.log("not found");
             }
         });
+    } catch (e) {
+        // console.error(e);
+    }
+}
+
+function read_token_interval() {
+    try {
+        // Set interval - 5 mins
+        setInterval(function () {
+            // Read token
+            read_token();
+        }, 5 * 60 * 1000);
     } catch (e) {
         // console.error(e);
     }

@@ -63,23 +63,17 @@ function format_value_percent(value, percent) {
 
     try {
         // Check if
-        if (value == 0 && percent == -100) {
+        if ($.isNumeric(value)) {
             // Vars
-            return_string = "";
-        } else {
-            // Check if
-            if ($.isNumeric(value)) {
-                // Vars
-                value = format_number_decimals(value);
-                percent = parseFloat(percent).toFixed(2);
+            value = format_number_decimals(value);
+            percent = parseFloat(percent).toFixed(2);
 
-                // Vars
-                var change_color = get_change_color(percent);
-                var change_direction = get_change_direction(percent);
+            // Vars
+            var change_color = get_change_color(percent);
+            var change_direction = get_change_direction(percent);
 
-                // Vars
-                return_string = `<span class="font--bold font--${change_color}">${change_direction} ${value} (${percent}%)</span>`;
-            }
+            // Vars
+            return_string = `<span class="font--bold font--${change_color}">${change_direction} ${value} (${percent}%)</span>`;
         }
     } catch (e) {
         // console.error(e);
