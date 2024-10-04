@@ -15,7 +15,7 @@ function init_accordions() {
             update_accordion_selectors();
 
             // Loop
-            $(selector_accordions_container + ":not(.accordions--closed)").each(function () {
+            $(selector_accordions_container + ":not(.accordions--closed)").each(function (index, value) {
                 try {
                     // Check if
                     if (!$(this).hasClass("accordions--init")) {
@@ -95,7 +95,7 @@ function init_accordions() {
                     var accordions = $(this).closest(selector_accordions).find(".accordion");
 
                     // Loop
-                    $(accordions).each(function () {
+                    $(accordions).each(function (index, value) {
                         // Vars
                         var accordion_id = $(this).find(".trigger").attr("aria-controls");
 

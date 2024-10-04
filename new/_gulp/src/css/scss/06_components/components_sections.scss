@@ -17,7 +17,7 @@ section {
     &.home {
         .left {
             padding-right: 4rem;
-    
+
             .heading {
                 margin: 0 0 20px;
 
@@ -31,22 +31,22 @@ section {
                 font-size: $font-size-4-em;
                 line-height: 1.85rem;
             }
-    
+
             .links {
                 display: inline-block;
                 list-style: none;
                 margin: 20px 0 0;
                 padding: 0;
-    
-    
+
+
                 li {
                     display: inline-block;
                     padding: 5px;
-    
+
                     &:first-child {
                         padding-left: 0;
                     }
-    
+
                     a {
                         border-radius: 50%;
                         margin: 0;
@@ -54,7 +54,7 @@ section {
                         width: 62px;
                         height: 62px;
                         overflow: hidden;
-    
+
                         img {
                             border-radius: 50%;
                             width: 100%;
@@ -63,18 +63,18 @@ section {
                     }
                 }
             }
-    
+
             .contract {
                 background: var(--poncho_grey);
                 border-radius: 10px;
                 margin: 30px 0 0;
                 padding-right: 10px;
-    
+
                 img {
                     height: 50px;
                     width: 50px;
                 }
-    
+
                 input {
                     background: var(--poncho_grey);
                     border: 0;
@@ -82,13 +82,13 @@ section {
                     padding: 15px;
                     width: 100%;
                 }
-    
+
                 i {
                     color: var(--poncho_grey_dark);
                 }
             }
         }
-    
+
         .right {
             img {
                 float: left;
@@ -96,14 +96,16 @@ section {
             }
         }
     }
-    
+
+    &.about {}
+
     &.poncho-pals {
         img {
             position: relative;
             width: 100%;
             z-index: 2;
         }
-    
+
         .background {
             border-radius: 25px;
             border: 2px solid var(--poncho_white);
@@ -118,24 +120,24 @@ section {
             width: 100%;
             z-index: 1;
         }
-    
+
         .container {
             padding: 20px 30px;
             text-align: center;
-    
+
             .logo {
                 max-width: 463px;
             }
-    
+
             .gif {
                 border: 2px solid var(--poncho_white);
                 margin: 20px auto;
                 max-width: 400px;
             }
-    
+
             .explore {
                 z-index: 2;
-    
+
                 img {
                     height: 40px;
                     margin-right: 5px;
@@ -144,6 +146,10 @@ section {
             }
         }
     }
+
+    &.tokenomics {}
+
+    &.roadmap {}
 }
 
 /************************  *************************/

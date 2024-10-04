@@ -791,7 +791,6 @@ section {
 .accordions__container .accordion--open {
   -webkit-transition: border-width 0.1s linear, margin 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   margin: 20px 0;
-  overflow: auto;
   transition: border-width 0.1s linear, margin 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .accordions__container .accordion--open .accordion__header .trigger {
@@ -1147,7 +1146,6 @@ section.poncho-pals .container .explore img {
   margin-right: 5px;
   width: 40px;
 }
-
 /************************  *************************/
 /* 		        Sections - Mobile   		       */
 /************************  *************************/

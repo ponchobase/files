@@ -31,8 +31,8 @@ function initialize_app() {
         // Read token
         read_token();
 
-        // Read token interval
-        read_token_interval();
+        // Set read token interval
+        set_read_token_interval();
     } catch (e) {
         // console.error(e);
     }

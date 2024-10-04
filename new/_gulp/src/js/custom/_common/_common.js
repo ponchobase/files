@@ -1,3 +1,19 @@
+function check_array_defined(array) {
+    try {
+        // Check if
+        if (typeof array == "undefined" || array == null || !$.isArray(array)) {
+            // Vars
+            array = [];
+        }
+    } catch (e) {
+        // console.error(e);
+        array = [];
+    }
+
+    // Return
+    return array;
+}
+
 function check_value_defined(value) {
     try {
         // Check if
