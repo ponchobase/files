@@ -69,8 +69,12 @@
     &--none {
         margin: 0 !important;
 
+        &-auto {
+            margin: 0 auto !important;
+        }
+
         &-right {
-            margin-right: 0;
+            margin-right: 0 !important;
         }
     }
 }

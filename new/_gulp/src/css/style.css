@@ -390,6 +390,7 @@ h3,
 
 p {
   margin: 0 0 10px;
+  line-height: 1.65rem;
 }
 p a {
   color: var(--poncho_white);
@@ -594,8 +595,11 @@ section {
 .margin--none {
   margin: 0 !important;
 }
+.margin--none-auto {
+  margin: 0 auto !important;
+}
 .margin--none-right {
-  margin-right: 0;
+  margin-right: 0 !important;
 }
 
 .no-wrap {
@@ -707,6 +711,7 @@ section {
   background: var(--primary_white_light);
   border: 1px solid var(--primary_grey_lightest);
   color: var(--primary_dark);
+  margin: 20px 0;
   position: relative;
   text-align: left;
   transition: margin 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -741,12 +746,15 @@ section {
 }
 .accordions__container .accordion__header .trigger {
   align-items: center;
-  background: none;
-  color: var(--primary_dark);
+  background: var(--poncho_blue);
+  border: 2px solid var(--poncho_white);
+  border-radius: 50px;
+  color: var(--poncho_white);
   display: flex;
   justify-content: space-between;
   margin: 0;
-  padding: 0 20px;
+  padding: 20px;
+  text-transform: none;
   width: 100%;
 }
 .accordions__container .accordion__header .trigger .title {
@@ -754,53 +762,31 @@ section {
   display: flex;
   flex-grow: 1;
   font-weight: 600;
-  margin: 20px 10px 20px 0;
-  padding: 0;
   text-align: left;
   transition: margin 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .accordions__container .accordion__header .trigger i {
   -webkit-transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  margin-left: 10px;
   transform: rotate(0deg);
   transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 .accordions__container .accordion__panel {
-  color: var(--primary_grey);
+  background: var(--poncho_blue_dark);
+  border: 2px solid var(--poncho_white);
+  border-top: 0;
+  color: var(--poncho_white);
   display: none;
-  float: left;
   line-height: 25px;
   margin: 0 auto;
-  padding: 10px 20px 20px;
-  width: 100%;
-}
-.accordions__container .accordion__panel h1,
-.accordions__container .accordion__panel h2,
-.accordions__container .accordion__panel h3,
-.accordions__container .accordion__panel h4,
-.accordions__container .accordion__panel h5,
-.accordions__container .accordion__panel h6,
-.accordions__container .accordion__panel .h1,
-.accordions__container .accordion__panel .h2,
-.accordions__container .accordion__panel .h3,
-.accordions__container .accordion__panel .h4,
-.accordions__container .accordion__panel .h5,
-.accordions__container .accordion__panel .h6,
-.accordions__container .accordion__panel label {
-  color: var(--primary_dark);
+  padding: 20px;
+  width: 95%;
 }
 .accordions__container .accordion--open {
   -webkit-transition: border-width 0.1s linear, margin 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  background: var(--primary_white_light);
-  border-top: 3px solid var(--primary_blue);
   margin: 20px 0;
   overflow: auto;
   transition: border-width 0.1s linear, margin 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-}
-.accordions__container .accordion--open:first-child {
-  margin-top: 0;
-}
-.accordions__container .accordion--open:last-child {
-  margin-bottom: 0;
 }
 .accordions__container .accordion--open .accordion__header .trigger {
   font-weight: bold;
@@ -813,16 +799,13 @@ section {
 /* 	           Accordion - Mobile  		           */
 /************************  *************************/
 @media (hover: none) {
-  .accordions__container .accordion .accordion__header .trigger:hover {
-    background: var(--primary_white) !important;
+  .accordions__container .accordion__header .trigger:hover {
+    background: var(--poncho_blue) !important;
   }
 }
-@media screen and (max-width: 1024px) {
-  .accordions__container .accordion__header .trigger {
-    padding: 0 15px;
-  }
+@media screen and (max-width: 480px) {
   .accordions__container .accordion__panel {
-    padding: 10px 15px 20px;
+    width: 90%;
   }
 }
 /************************  *************************/
@@ -1067,6 +1050,7 @@ section.home .left .heading h1 {
 section.home .left .description {
   font-size: 24px;
   font-size: 1.2rem;
+  line-height: 1.85rem;
 }
 section.home .left .links {
   display: inline-block;
