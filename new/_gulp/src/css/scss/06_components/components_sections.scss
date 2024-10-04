@@ -99,15 +99,18 @@ section {
             border: 2px solid var(--poncho_white);
             height: 100%;
             left: 0;
+            margin: 0 auto;
+            max-width: 700px;
             object-fit: cover;
             position: absolute;
+            right: 0;
             top: 0;
             width: 100%;
             z-index: 1;
         }
     
         .container {
-            padding: 20px 50px;
+            padding: 20px 30px;
             text-align: center;
     
             .logo {
@@ -143,11 +146,35 @@ section {
 
 // @include media("xl") {}
 
-// @include media("lg") {}
+@include media("lg") {
+    section {
+        .inner {
+            padding: 60px 30px;
+        }
+
+        &.poncho-pals {
+            .container {
+                padding: 20px;
+            }
+        }
+    }
+}
 
 // @include media("md") {}
 
-// @include media("sm") {}
+@include media("sm") {
+    section {
+        .inner {
+            padding: 30px 15px;
+        }
+
+        &.poncho-pals {
+            .container {
+                padding: 15px;
+            }
+        }
+    }
+}
 
 // @include media("xs") {}
 

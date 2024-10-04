@@ -622,13 +622,7 @@ section {
 .row--max-padding {
   margin: 0 auto;
   max-width: 1380px;
-  padding: 0 2rem;
-  position: relative;
-}
-.row--max-small-padding {
-  margin: 0 auto;
-  max-width: 1080px;
-  padding: 0 2rem;
+  padding: 0 30px;
   position: relative;
 }
 
@@ -649,6 +643,14 @@ section {
   .padding-right {
     padding-right: 0;
     padding-bottom: 10px;
+  }
+  .row--max-padding {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .row--max-padding {
+    padding: 0 15px;
   }
 }
 /************************  *************************/
@@ -1098,14 +1100,17 @@ section.poncho-pals .background {
   border: 2px solid var(--poncho_white);
   height: 100%;
   left: 0;
+  margin: 0 auto;
+  max-width: 700px;
   object-fit: cover;
   position: absolute;
+  right: 0;
   top: 0;
   width: 100%;
   z-index: 1;
 }
 section.poncho-pals .container {
-  padding: 20px 50px;
+  padding: 20px 30px;
   text-align: center;
 }
 section.poncho-pals .container .logo {
@@ -1128,6 +1133,22 @@ section.poncho-pals .container .explore img {
 /************************  *************************/
 /* 		        Sections - Mobile   		       */
 /************************  *************************/
+@media screen and (max-width: 1024px) {
+  section .inner {
+    padding: 60px 30px;
+  }
+  section.poncho-pals .container {
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  section .inner {
+    padding: 30px 15px;
+  }
+  section.poncho-pals .container {
+    padding: 15px;
+  }
+}
 /************************  *************************/
 /* 			    Sections - Print  			       */
 /************************  *************************/

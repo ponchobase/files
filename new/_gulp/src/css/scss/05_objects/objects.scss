@@ -99,16 +99,9 @@
         &-padding {
             margin: 0 auto;
             max-width: 1380px;
-            padding: 0 2rem;
+            padding: 0 30px;
             position: relative;
         }
-    }
-
-    &--max-small-padding {
-        margin: 0 auto;
-        max-width: 1080px;
-        padding: 0 2rem;
-        position: relative;
     }
 }
 
@@ -139,11 +132,27 @@
         padding-right: 0;
         padding-bottom: 10px;
     }
+
+    .row {
+        &--max {
+            &-padding {
+                padding: 0 20px;
+            }
+        }
+    }
 }
 
 // @include media("md") {}
 
-// @include media("sm") {}
+@include media("sm") {
+    .row {
+        &--max {
+            &-padding {
+                padding: 0 15px;
+            }
+        }
+    }
+}
 
 // @include media("xs") {}
 
