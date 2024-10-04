@@ -31,6 +31,9 @@ function read_token() {
 
                             // Vars
                             price_found = true;
+
+                            // Title
+                            document.title = "$PONCHO: " + price + " (" + price_change + "%) | Poncho on BASE";
                         }
                     }
                 } else {
