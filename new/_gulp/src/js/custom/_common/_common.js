@@ -72,6 +72,30 @@ function init_lazy_load() {
     }
 }
 
+function parse_json_response(response) {
+    try {
+        // Check value defined
+        response = check_value_defined(response);
+
+        // Check if
+        if (response != "") {
+            // Vars
+            response = JSON.parse(response);
+        } else {
+            // Vars
+            response = false;
+        }
+
+    } catch (e) {
+        // console.error(e);
+        // Vars
+        response = false;
+    }
+
+    // Return
+    return response;
+}
+
 function throttle(callback, limit) {
     try {
         // Vars
