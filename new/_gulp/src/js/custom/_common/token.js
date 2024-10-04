@@ -14,10 +14,21 @@ function read_token() {
                 if (pair) {
                     // Vars
                     var price = check_value_defined(pair.priceUsd);
-                    var price_change = check_value_defined(pair.priceChange.h24);
 
+                    // Check if
+                    if (price) {
+                        // Vars
+                        var price_change = check_value_defined(pair.priceChange.h24);
+                        var price_string = format_value_percent(price, price_change);
 
-                    $("[data-token=price]").append('<span class="font--bold font--green"><i class="fas fa-long-arrow-alt-up"></i> ' + price + ' (' + price_change + '%)</span>')
+                        // Check if
+                        if (price_string) {
+                            // Append
+                            $("[data-token=price]").append(price_string);
+                        }
+                    }
+                } else {
+
                 }
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {

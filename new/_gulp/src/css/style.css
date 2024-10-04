@@ -11,8 +11,9 @@
   --poncho_green: #14c85c;
   --poncho_grey: #eff2f5;
   --poncho_grey_dark: #545454;
-  --poncho_white: #fbffef;
   --poncho_orange: #ff9900;
+  --poncho_red: #e6453f;
+  --poncho_white: #fbffef;
 }
 
 /************************  *************************/
@@ -578,6 +579,9 @@ section {
 }
 .font--normal {
   font-weight: normal;
+}
+.font--red {
+  color: var(--poncho_red);
 }
 .font--small {
   font-size: 0.85rem;

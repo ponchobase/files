@@ -51,6 +51,10 @@
         font-weight: normal;
     }
 
+    &--red {
+        color: var(--poncho_red);
+    }
+
     &--small {
         font-size: 0.85rem;
     }
