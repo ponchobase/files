@@ -364,20 +364,25 @@ h6,
 .h6 {
   font-weight: 600;
   letter-spacing: 0.0015rem;
+  line-height: 2rem;
 }
 
 h1,
 .h1 {
   font-size: 50px;
   font-size: 2.5rem;
-  line-height: 2rem;
 }
 
 h2,
 .h2 {
   font-size: 28px;
   font-size: 1.4rem;
-  line-height: 1.75rem;
+}
+
+h2,
+.h2 {
+  font-size: 22px;
+  font-size: 1.1rem;
 }
 
 p {
@@ -390,6 +395,21 @@ p a {
 /************************  *************************/
 /* 	           Basic HTML - Mobile  		       */
 /************************  *************************/
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
 /************************  *************************/
 /* 			   Basic HTML - Print  			       */
 /************************  *************************/
@@ -406,7 +426,7 @@ p a {
 /* 	      Forms & Inputs - Desktop  	       	   */
 /************************  *************************/
 button,
-.btn {
+.button {
   background: var(--poncho_white);
   border: 0;
   border-radius: 25px;
@@ -416,16 +436,16 @@ button,
   display: inline-block;
   line-height: normal;
   margin: 5px 5px 5px 0;
-  padding: 10px 35px;
+  padding: 10px 20px;
   position: relative;
   text-transform: uppercase;
 }
 button:last-child,
-.btn:last-child {
+.button:last-child {
   margin-right: 0;
 }
 button:hover,
-.btn:hover {
+.button:hover {
   background: var(--poncho_white);
   color: var(--poncho_white);
 }
@@ -801,18 +821,18 @@ section {
 /************************  *************************/
 /* 			      Button - Desktop 			       */
 /************************  *************************/
-.btn {
+.button {
   border: none;
   font-weight: 600;
   text-decoration: none !important;
   white-space: nowrap;
 }
-.btn--blue {
+.button--blue {
   background: var(--poncho_blue);
   border: 2px solid var(--poncho_white);
   color: var(--poncho_white);
 }
-.btn--blue:hover {
+.button--blue:hover {
   background: var(--poncho_blue_hover);
   color: var(--poncho_white);
 }
@@ -821,7 +841,7 @@ section {
 /* 	              Button - Mobile  	 	           */
 /************************  *************************/
 @media (hover: none) {
-  .btn--blue:hover {
+  .button--blue:hover {
     background: var(--poncho_blue) !important;
   }
 }
@@ -926,6 +946,28 @@ section {
 /************************  *************************/
 /* 	              Header - Mobile  	               */
 /************************  *************************/
+@media screen and (max-width: 1024px) {
+  .header .inner {
+    margin: 20px;
+  }
+  .header .logo a img {
+    max-width: 125px;
+    width: 125px;
+  }
+  .header nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header .inner {
+    margin: 15px;
+    padding: 10px 15px;
+  }
+  .header .logo a img {
+    max-width: 100px;
+    width: 100px;
+  }
+}
 /************************  *************************/
 /* 			      Header - Print  		           */
 /************************  *************************/

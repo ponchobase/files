@@ -54,20 +54,25 @@ h6,
 .h6 {
     font-weight: 600;
     letter-spacing: 0.0015rem;
+    line-height: 2rem;
 }
 
 h1,
 .h1 {
     font-size: $font-size-1;
     font-size: $font-size-1-em;
-    line-height: 2rem;
 }
 
 h2,
 .h2 {
     font-size: $font-size-2;
     font-size: $font-size-2-em;
-    line-height: 1.75rem;
+}
+
+h2,
+.h2 {
+    font-size: $font-size-3;
+    font-size: $font-size-3-em;
 }
 
 // <p> Defines a paragraph
@@ -88,19 +93,31 @@ p {
 
 /************************  *************************/
 
-@include media("xxl") {}
+// @include media("xxl") {}
 
-@include media("xl") {}
+@include media("xl") {
+    html {
+        font-size: $font-size-4;
+    }
+}
 
-@include media("lg") {}
+@include media("lg") {
+    html {
+        font-size: $font-size-5;
+    }
+}
 
-@include media("md") {}
+// @include media("md") {}
 
-@include media("sm") {}
+@include media("sm") {
+    html {
+        font-size: $font-size-6;
+    }
+}
 
-@include media("xs") {}
+// @include media("xs") {}
 
-@include media("xxs") {}
+// @include media("xxs") {}
 
 /************************  *************************/
 
@@ -108,4 +125,4 @@ p {
 
 /************************  *************************/
 
-@media print {}
+// @media print {}

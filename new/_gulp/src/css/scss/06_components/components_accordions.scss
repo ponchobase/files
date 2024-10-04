@@ -155,9 +155,9 @@
     }
 }
 
-@include media("xxl") {}
+// @include media("xxl") {}
 
-@include media("xl") {}
+// @include media("xl") {}
 
 @include media("lg") {
     .accordions {
@@ -177,13 +177,13 @@
     }
 }
 
-@include media("md") {}
+// @include media("md") {}
 
-@include media("sm") {}
+// @include media("sm") {}
 
-@include media("xs") {}
+// @include media("xs") {}
 
-@include media("xxs") {}
+// @include media("xxs") {}
 
 /************************  *************************/
 
@@ -191,4 +191,4 @@
 
 /************************  *************************/
 
-@media print {}
+// @media print {}

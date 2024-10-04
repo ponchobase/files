@@ -11,7 +11,7 @@
 // <textarea>	Defines a multiline input control (text area)
 // <button>	Defines a clickable button
 button,
-.btn {
+.button {
     background: var(--poncho_white);
     border: 0;
     border-radius: 25px;
@@ -21,7 +21,7 @@ button,
     display: inline-block;
     line-height: normal;
     margin: 5px 5px 5px 0;
-    padding: 10px 35px;
+    padding: 10px 20px;
     position: relative;
     text-transform: uppercase;
 
@@ -50,19 +50,19 @@ button,
 
 /************************  *************************/
 
-@include media("xxl") {}
+// @include media("xxl") {}
 
-@include media("xl") {}
+// @include media("xl") {}
 
-@include media("lg") {}
+// @include media("lg") {}
 
-@include media("md") {}
+// @include media("md") {}
 
-@include media("sm") {}
+// @include media("sm") {}
 
-@include media("xs") {}
+// @include media("xs") {}
 
-@include media("xxs") {}
+// @include media("xxs") {}
 
 /************************  *************************/
 
@@ -70,4 +70,4 @@ button,
 
 /************************  *************************/
 
-@media print {}
+// @media print {}

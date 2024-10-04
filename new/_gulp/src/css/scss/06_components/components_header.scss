@@ -63,19 +63,54 @@
 
 /************************  *************************/
 
-@include media("xxl") {}
+// @include media("xxl") {}
 
-@include media("xl") {}
+// @include media("xl") {}
 
-@include media("lg") {}
+@include media("lg") {
+    .header {
+        .inner {
+            margin: 20px;
+        }
 
-@include media("md") {}
+        .logo {
+            a {
+                img {
+                    max-width: 125px;
+                    width: 125px;
+                }
+            }
+        }
 
-@include media("sm") {}
+        nav {
+            display: none;
+        }
+    }
+}
 
-@include media("xs") {}
+// @include media("md") {}
 
-@include media("xxs") {}
+@include media("sm") {
+    .header {
+        .inner {
+            margin: 15px;
+            padding: 10px 15px;
+        }
+
+        .logo {
+            a {
+                img {
+                    max-width: 100px;
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
+
+// @include media("xs") {}
+
+// @include media("xxs") {}
 
 /************************  *************************/
 
@@ -83,4 +118,4 @@
 
 /************************  *************************/
 
-@media print {}
+// @media print {}

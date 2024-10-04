@@ -16,6 +16,9 @@ function initialize_app() {
         // Init anchor tags
         init_anchor_tags();
 
+        // Init charts
+        init_charts();
+
         // Init lazy load
         init_lazy_load();
 
