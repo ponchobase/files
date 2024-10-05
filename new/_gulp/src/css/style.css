@@ -437,6 +437,15 @@ p a {
 /************************  *************************/
 /* 	      Forms & Inputs - Desktop  	       	   */
 /************************  *************************/
+input {
+  background: var(--poncho_grey);
+  border: 0;
+  border-radius: 10px;
+}
+input:read-only {
+  cursor: pointer;
+}
+
 button,
 .button {
   background: var(--poncho_white);
@@ -1126,20 +1135,21 @@ section.home .left .contract {
   border-radius: 10px;
   margin: 30px 0 0;
   padding-right: 10px;
+  position: relative;
 }
 section.home .left .contract img {
   height: 50px;
   width: 50px;
+  z-index: 1;
 }
 section.home .left .contract input {
-  background: var(--poncho_grey);
-  border: 0;
-  border-radius: 10px;
-  padding: 15px;
+  padding: 15px 40px 15px 55px;
+  position: absolute;
   width: 100%;
 }
 section.home .left .contract i {
   color: var(--poncho_grey_dark);
+  z-index: 1;
 }
 section.home .right img {
   float: left;

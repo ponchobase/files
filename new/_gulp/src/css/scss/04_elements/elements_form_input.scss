@@ -6,6 +6,16 @@
 
 // <form> Defines an HTML form for user input
 // <input> Defines an input control
+input {
+    background: var(--poncho_grey);
+    border: 0;
+    border-radius: 10px;
+
+    &:read-only {
+        cursor: pointer;
+    }
+}
+
 // <input[type="checkbox"]
 // input[type="radio"]
 // <textarea> Defines a multiline input control (text area)
