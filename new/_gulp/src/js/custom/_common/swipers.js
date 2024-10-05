@@ -52,13 +52,13 @@ function init_roadmap_swiper() {
         // Init new swiper
         new Swiper(data_swiper, {
             // Optional parameters
+            centeredSlides: true,
+            centeredSlidesBounds: true,
             direction: "horizontal",
-            freeMode: true,
             keyboard: {
                 enabled: true,
                 onlyInViewport: false,
             },
-            loop: true,
             mousewheel: {
                 forceToAxis: true
             },
@@ -68,7 +68,6 @@ function init_roadmap_swiper() {
             },
             slidesPerView: "auto",
             slidesPerGroup: 1,
-            spaceBetween: 16,
             updateOnWindowResize: true
         });
     } catch (e) {

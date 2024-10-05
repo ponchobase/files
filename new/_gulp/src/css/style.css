@@ -384,8 +384,8 @@ h2,
 
 h3,
 .h3 {
-  font-size: 36px;
-  font-size: 1.8rem;
+  font-size: 32px;
+  font-size: 1.6rem;
   margin: 0 0 15px;
 }
 
@@ -576,6 +576,9 @@ section {
 }
 .font--green {
   color: var(--poncho_green);
+}
+.font--orange {
+  color: var(--poncho_orange);
 }
 .font--normal {
   font-weight: normal;
@@ -1146,6 +1149,43 @@ section.poncho-pals .container .explore img {
   margin-right: 5px;
   width: 40px;
 }
+section.roadmap .roadmap-swiper .swiper {
+  display: inline-block;
+  max-width: 100%;
+}
+section.roadmap .roadmap-swiper .swiper .swiper-wrapper .swiper-slide {
+  width: auto;
+}
+section.roadmap .roadmap-swiper .swiper .swiper-wrapper .swiper-slide .phase {
+  background: var(--poncho_blue_dark);
+  border-radius: 25px;
+  margin: 30px;
+  padding: 30px;
+}
+section.roadmap .roadmap-swiper .swiper .swiper-wrapper .swiper-slide .phase.completed {
+  box-shadow: rgba(20, 200, 92, 0.7) 0px 0px 24px 0px;
+}
+section.roadmap .roadmap-swiper .swiper .swiper-wrapper .swiper-slide .phase.progress {
+  box-shadow: rgba(255, 153, 0, 0.7) 0px 0px 24px 0px;
+}
+section.roadmap .roadmap-swiper .swiper .swiper-wrapper .swiper-slide .phase h3 {
+  text-align: center;
+}
+section.roadmap .roadmap-swiper .swiper .swiper-wrapper .swiper-slide .phase ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+section.roadmap .roadmap-swiper .swiper .swiper-wrapper .swiper-slide .phase ul li {
+  align-items: center;
+  display: flex;
+  padding: 10px;
+}
+section.roadmap .roadmap-swiper .swiper .swiper-wrapper .swiper-slide .phase ul li i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
 /************************  *************************/
 /* 		        Sections - Mobile   		       */
 /************************  *************************/
