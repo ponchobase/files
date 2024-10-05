@@ -147,10 +147,22 @@ section {
         }
     }
 
-    &.tokenomics {}
+    &.tokenomics {
+        .top {
+            margin: 0 auto 30px;
+            max-width: 1024px;
+            text-align: center;
+        }
+
+        .left,
+        .right {
+            margin: 0 20px 20px;
+        }
+    }
 
     &.roadmap {
         .roadmap-swiper {
+
             .swiper-next,
             .swiper-prev {
                 background: none;
@@ -243,6 +255,7 @@ section {
 
         &.roadmap {
             .roadmap-swiper {
+
                 .swiper-next,
                 .swiper-prev {
                     font-size: 1.5rem;
@@ -283,6 +296,7 @@ section {
     section {
         &.roadmap {
             .roadmap-swiper {
+
                 .swiper-next,
                 .swiper-prev {
                     font-size: 1.25rem;

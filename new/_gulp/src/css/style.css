@@ -878,6 +878,9 @@ section {
   align-items: center;
   justify-content: space-between;
 }
+.flexbox--wrap {
+  flex-wrap: wrap;
+}
 
 /************************  *************************/
 /* 		         Flexbox - Mobile   		       */
@@ -1148,6 +1151,15 @@ section.poncho-pals .container .explore img {
   height: 40px;
   margin-right: 5px;
   width: 40px;
+}
+section.tokenomics .top {
+  margin: 0 auto 30px;
+  max-width: 1024px;
+  text-align: center;
+}
+section.tokenomics .left,
+section.tokenomics .right {
+  margin: 0 20px 20px;
 }
 section.roadmap .roadmap-swiper .swiper-next,
 section.roadmap .roadmap-swiper .swiper-prev {

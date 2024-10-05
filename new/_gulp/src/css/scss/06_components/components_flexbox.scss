@@ -24,6 +24,10 @@
         align-items: center;
         justify-content: space-between;
     }
+
+    &--wrap {
+        flex-wrap: wrap;
+    }
 }
 
 /************************  *************************/
