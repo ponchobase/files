@@ -389,6 +389,13 @@ h3,
   margin: 0 0 15px;
 }
 
+h4,
+.h4 {
+  font-size: 24px;
+  font-size: 1.2rem;
+  margin: 0 0 10px;
+}
+
 p {
   margin: 0 0 10px;
   line-height: 1.65rem;
@@ -509,6 +516,10 @@ a {
 /************************  *************************/
 /* 	                Lists - Desktop  	       	   */
 /************************  *************************/
+ul {
+  line-height: 1.65rem;
+}
+
 /************************  *************************/
 /* 	                Lists - Mobile  	       	   */
 /************************  *************************/
@@ -607,6 +618,9 @@ section {
 }
 .margin--none-right {
   margin-right: 0 !important;
+}
+.margin--icon {
+  margin-right: 5px;
 }
 
 .no-wrap {
