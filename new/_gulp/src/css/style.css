@@ -1216,6 +1216,9 @@ section.roadmap .roadmap-swiper .swiper .swiper-wrapper .swiper-slide .phase ul 
     font-size: 1.5rem;
     padding: 10px 15px;
   }
+  section.roadmap .roadmap-swiper .swiper .swiper-wrapper .swiper-slide .phase {
+    margin: 20px;
+  }
 }
 @media screen and (max-width: 768px) {
   section .inner {
@@ -1224,10 +1227,18 @@ section.roadmap .roadmap-swiper .swiper .swiper-wrapper .swiper-slide .phase ul 
   section.poncho-pals .container {
     padding: 15px;
   }
+}
+@media screen and (max-width: 480px) {
   section.roadmap .roadmap-swiper .swiper-next,
   section.roadmap .roadmap-swiper .swiper-prev {
     font-size: 1.25rem;
     padding: 10px;
+  }
+  section.roadmap .roadmap-swiper .swiper .swiper-wrapper .swiper-slide {
+    width: 100%;
+  }
+  section.roadmap .roadmap-swiper .swiper .swiper-wrapper .swiper-slide .phase {
+    margin: 30px 15px;
   }
 }
 /************************  *************************/

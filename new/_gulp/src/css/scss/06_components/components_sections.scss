@@ -248,6 +248,16 @@ section {
                     font-size: 1.5rem;
                     padding: 10px 15px;
                 }
+
+                .swiper {
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            .phase {
+                                margin: 20px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -266,7 +276,11 @@ section {
                 padding: 15px;
             }
         }
+    }
+}
 
+@include media("xs") {
+    section {
         &.roadmap {
             .roadmap-swiper {
                 .swiper-next,
@@ -274,12 +288,22 @@ section {
                     font-size: 1.25rem;
                     padding: 10px;
                 }
+
+                .swiper {
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            width: 100%;
+
+                            .phase {
+                                margin: 30px 15px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
 }
-
-// @include media("xs") {}
 
 // @include media("xxs") {}
 
