@@ -33,6 +33,7 @@ gulp.task("dist-js-vendor", () => {
         // Vendor
         "./src/js/vendor/jquery.min.js",
         "./src/js/vendor/chart.umd.min.js",
+        "./src/js/vendor/particles.min.js",
         "./src/js/vendor/swiper.min.js"
     ])
         .pipe(concat("poncho-vendor.min.js"))
@@ -52,6 +53,7 @@ gulp.task("dist-js", () => {
         "./src/js/custom/_common/_common.js",
         "./src/js/custom/_common/accordions.js",
         "./src/js/custom/_common/charts.js",
+        "./src/js/custom/_common/particles.js",
         "./src/js/custom/_common/scroll.js",
         "./src/js/custom/_common/swipers.js",
         "./src/js/custom/_common/token.js"

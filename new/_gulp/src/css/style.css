@@ -1015,6 +1015,24 @@ section {
 /* 			      Header - Print  		           */
 /************************  *************************/
 /************************  *************************/
+/* 	           Particles - Desktop   	           */
+/************************  *************************/
+#particles {
+  height: 100%;
+  left: 0;
+  opacity: 0.2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/************************  *************************/
+/* 	           Particles - Mobile  	               */
+/************************  *************************/
+/************************  *************************/
+/* 		       Particles - Print  		           */
+/************************  *************************/
+/************************  *************************/
 /* 	              Scroll - Desktop   		       */
 /************************  *************************/
 #scroll-top {
@@ -1127,6 +1145,9 @@ section.home .right img {
   float: left;
   max-width: 500px;
 }
+section.about .about-swiper .swiper .swiper-wrapper .swiper-slide {
+  width: 100%;
+}
 section.poncho-pals img {
   position: relative;
   width: 100%;
@@ -1175,28 +1196,6 @@ section.tokenomics .left,
 section.tokenomics .right {
   margin: 0 20px 20px;
 }
-section.roadmap .roadmap-swiper .swiper-next,
-section.roadmap .roadmap-swiper .swiper-prev {
-  background: none;
-  font-size: 2rem;
-}
-section.roadmap .roadmap-swiper .swiper-next.swiper-button-disabled,
-section.roadmap .roadmap-swiper .swiper-prev.swiper-button-disabled {
-  opacity: 0.5;
-}
-section.roadmap .roadmap-swiper .swiper-next {
-  margin-left: 10px;
-}
-section.roadmap .roadmap-swiper .swiper-prev {
-  margin-right: 10px;
-}
-section.roadmap .roadmap-swiper .swiper {
-  display: inline-block;
-  max-width: 100%;
-}
-section.roadmap .roadmap-swiper .swiper .swiper-wrapper .swiper-slide {
-  width: auto;
-}
 section.roadmap .roadmap-swiper .swiper .swiper-wrapper .swiper-slide .phase {
   background: var(--poncho_blue_dark);
   border-radius: 25px;
@@ -1240,11 +1239,6 @@ section.faq img {
   section.poncho-pals .container {
     padding: 20px;
   }
-  section.roadmap .roadmap-swiper .swiper-next,
-  section.roadmap .roadmap-swiper .swiper-prev {
-    font-size: 1.5rem;
-    padding: 10px 15px;
-  }
   section.roadmap .roadmap-swiper .swiper .swiper-wrapper .swiper-slide .phase {
     margin: 20px;
   }
@@ -1258,11 +1252,6 @@ section.faq img {
   }
 }
 @media screen and (max-width: 480px) {
-  section.roadmap .roadmap-swiper .swiper-next,
-  section.roadmap .roadmap-swiper .swiper-prev {
-    font-size: 1.25rem;
-    padding: 10px;
-  }
   section.roadmap .roadmap-swiper .swiper .swiper-wrapper .swiper-slide {
     width: 100%;
   }
@@ -1272,6 +1261,51 @@ section.faq img {
 }
 /************************  *************************/
 /* 			    Sections - Print  			       */
+/************************  *************************/
+/************************  *************************/
+/* 	             Swipers - Desktop   	           */
+/************************  *************************/
+.button.swiper-next, .button.swiper-prev {
+  background: none;
+  font-size: 2rem;
+}
+.button.swiper-next.swiper-button-disabled, .button.swiper-prev.swiper-button-disabled {
+  opacity: 0.5;
+}
+.button.swiper-next {
+  margin-left: 10px;
+}
+.button.swiper-prev {
+  margin-right: 10px;
+}
+
+.swiper {
+  display: inline-block;
+  max-width: 100%;
+}
+.swiper .swiper-wrapper .swiper-slide {
+  width: auto;
+}
+
+/************************  *************************/
+/* 	             Swipers - Mobile  	               */
+/************************  *************************/
+@media screen and (max-width: 1024px) {
+  .swiper-next,
+  .swiper-prev {
+    font-size: 1.5rem;
+    padding: 10px 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .swiper-next,
+  .swiper-prev {
+    font-size: 1.25rem;
+    padding: 10px;
+  }
+}
+/************************  *************************/
+/* 		         Swipers - Print  		           */
 /************************  *************************/
 /************************  *************************/
 /* 			      Trumps - Desktop 		           */

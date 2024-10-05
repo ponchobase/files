@@ -97,7 +97,17 @@ section {
         }
     }
 
-    &.about {}
+    &.about {
+        .about-swiper {
+            .swiper {
+                .swiper-wrapper {
+                    .swiper-slide {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
 
     &.poncho-pals {
         img {
@@ -162,33 +172,9 @@ section {
 
     &.roadmap {
         .roadmap-swiper {
-
-            .swiper-next,
-            .swiper-prev {
-                background: none;
-                font-size: 2rem;
-
-                &.swiper-button-disabled {
-                    opacity: 0.5;
-                }
-            }
-
-            .swiper-next {
-                margin-left: 10px;
-            }
-
-            .swiper-prev {
-                margin-right: 10px;
-            }
-
             .swiper {
-                display: inline-block;
-                max-width: 100%;
-
                 .swiper-wrapper {
                     .swiper-slide {
-                        width: auto;
-
                         .phase {
                             background: var(--poncho_blue_dark);
                             border-radius: 25px;
@@ -261,13 +247,6 @@ section {
 
         &.roadmap {
             .roadmap-swiper {
-
-                .swiper-next,
-                .swiper-prev {
-                    font-size: 1.5rem;
-                    padding: 10px 15px;
-                }
-
                 .swiper {
                     .swiper-wrapper {
                         .swiper-slide {
@@ -302,13 +281,6 @@ section {
     section {
         &.roadmap {
             .roadmap-swiper {
-
-                .swiper-next,
-                .swiper-prev {
-                    font-size: 1.25rem;
-                    padding: 10px;
-                }
-
                 .swiper {
                     .swiper-wrapper {
                         .swiper-slide {

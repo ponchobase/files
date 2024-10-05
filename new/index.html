@@ -63,8 +63,15 @@
     <!-- AODA skip to main content -->
     <a class="button button--blue row" id="skip-main" href="#main">Skip to main content</a>
 
-    <!-- Body background -->
+    <!-- Background body -->
     <img class="background--body" src="/new/dist/img/background.png?v=1" alt="Body Background">
+
+    <!-- Particles -->
+    <div id="particles"></div>
+
+
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
     <!-- Header -->
     <header class="row header">
@@ -152,77 +159,85 @@
             <div class="inner">
                 <!-- Heading -->
                 <h2 class="text-align-center">About</h2>
+                <!-- Row max padding -->
+                <div class="row--max-padding">
+                    <!-- About swiper -->
+                    <div class="flexbox flexbox--vertical  about-swiper">
+                        <!-- Prev -->
+                        <button type="button" class="button swiper-prev" title="Swiper Prev"><span><i class="fa-solid fa-chevron-left"></i></span></button>
 
-                <!-- About swiper -->
-                <div class="about-swiper">
-                    <!-- Prev -->
-                    <button type="button" class="button button--dark swiper-prev" title="Swiper Prev"><span><i class="fas fa-chevron-circle-left"></i></span></button>
+                        <!-- Swiper -->
+                        <div class="swiper" data-swiper="about-swiper">
+                            <!-- Swiper wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Swiper slide -->
+                                <div class="swiper-slide">
+                                    <!-- Lore -->
+                                    <div class="Lore">
+                                        <div class="flexbox flexbox--align-end">
+                                            <!-- Left -->
+                                            <div class="left">
+                                                <img src="/new/dist/img/poncho.png?v=1" alt="Poncho" loading="lazy">
+                                            </div>
 
-                    <!-- Swiper -->
-                    <div class="swiper" data-swiper="about-swiper">
-                        <!-- Swiper wrapper -->
-                        <div class="swiper-wrapper">
-                            <!-- Swiper slide -->
-                            <div class="swiper-slide">
-                                <!-- Container -->
-                                <div class="container">
-                                    <!-- Left -->
-                                    <div class="left">
-                                        <img src="/new/dist/img/poncho.png?v=1" alt="Poncho" loading="lazy">
-                                    </div>
-
-                                    <!-- Right -->
-                                    <div class="right">
-                                        <h3>For The People</h3>
-                                        <p>$PONCHO was created to make a community that would be family friendly and inviting for all on BASE. With the introduction of Coinbase Smart Wallet we believe Poncho can serve as a friendly guide to first time crypto users.</p>
-                                        <p>The official Coinbase account said they were planning to "send" all the cute cats on BASE and Poncho is the cutest!</p>
-                                        <a class="button button--blue" href="https://app.uniswap.org/swap?chain=base&inputCurrency=ETH&outputCurrency=0xC2fE011C3885277c7F0e7ffd45Ff90cADc8ECD12" target="_blank">Buy Now</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Swiper slide -->
-                            <div class="swiper-slide">
-                                <!-- Container -->
-                                <div class="container">
-                                    <!-- Left -->
-                                    <div class="left">
-                                        <img src="/new/dist/img/poncho.png?v=1" alt="Poncho" loading="lazy">
-                                    </div>
-
-                                    <!-- Right -->
-                                    <div class="right">
-                                        <h3>For The People</h3>
-                                        <p>$PONCHO was created to make a community that would be family friendly and inviting for all on BASE. With the introduction of Coinbase Smart Wallet we believe Poncho can serve as a friendly guide to first time crypto users.</p>
-                                        <p>The official Coinbase account said they were planning to "send" all the cute cats on BASE and Poncho is the cutest!</p>
-                                        <a class="button button--blue" href="https://app.uniswap.org/swap?chain=base&inputCurrency=ETH&outputCurrency=0xC2fE011C3885277c7F0e7ffd45Ff90cADc8ECD12" target="_blank">Buy Now</a>
+                                            <!-- Right -->
+                                            <div class="right">
+                                                <h3>For The People</h3>
+                                                <p>$PONCHO was created to make a community that would be family friendly and inviting for all on BASE. With the introduction of Coinbase Smart Wallet we believe Poncho can serve as a friendly guide to first time crypto users.</p>
+                                                <p>The official Coinbase account said they were planning to "send" all the cute cats on BASE and Poncho is the cutest!</p>
+                                                <a class="button button--blue" href="https://app.uniswap.org/swap?chain=base&inputCurrency=ETH&outputCurrency=0xC2fE011C3885277c7F0e7ffd45Ff90cADc8ECD12" target="_blank">Buy Now</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <!-- Swiper slide -->
-                            <div class="swiper-slide">
-                                <!-- Container -->
-                                <div class="container">
-                                    <!-- Left -->
-                                    <div class="left">
-                                        <img src="/new/dist/img/poncho.png?v=1" alt="Poncho" loading="lazy">
+                                <!-- Swiper slide -->
+                                <div class="swiper-slide">
+                                    <!-- Lore -->
+                                    <div class="Lore">
+                                        <div class="flexbox flexbox--align-end">
+                                            <!-- Left -->
+                                            <div class="left">
+                                                <img src="/new/dist/img/poncho.png?v=1" alt="Poncho" loading="lazy">
+                                            </div>
+
+                                            <!-- Right -->
+                                            <div class="right">
+                                                <h3>For The People</h3>
+                                                <p>$PONCHO was created to make a community that would be family friendly and inviting for all on BASE. With the introduction of Coinbase Smart Wallet we believe Poncho can serve as a friendly guide to first time crypto users.</p>
+                                                <p>The official Coinbase account said they were planning to "send" all the cute cats on BASE and Poncho is the cutest!</p>
+                                                <a class="button button--blue" href="https://app.uniswap.org/swap?chain=base&inputCurrency=ETH&outputCurrency=0xC2fE011C3885277c7F0e7ffd45Ff90cADc8ECD12" target="_blank">Buy Now</a>
+                                            </div>
+                                        </div>
                                     </div>
+                                </div>
 
-                                    <!-- Right -->
-                                    <div class="right">
-                                        <h3>For The People</h3>
-                                        <p>$PONCHO was created to make a community that would be family friendly and inviting for all on BASE. With the introduction of Coinbase Smart Wallet we believe Poncho can serve as a friendly guide to first time crypto users.</p>
-                                        <p>The official Coinbase account said they were planning to "send" all the cute cats on BASE and Poncho is the cutest!</p>
-                                        <a class="button button--blue" href="https://app.uniswap.org/swap?chain=base&inputCurrency=ETH&outputCurrency=0xC2fE011C3885277c7F0e7ffd45Ff90cADc8ECD12" target="_blank">Buy Now</a>
+                                <!-- Swiper slide -->
+                                <div class="swiper-slide">
+                                    <!-- Lore -->
+                                    <div class="Lore">
+                                        <div class="flexbox flexbox--align-end">
+                                            <!-- Left -->
+                                            <div class="left">
+                                                <img src="/new/dist/img/poncho.png?v=1" alt="Poncho" loading="lazy">
+                                            </div>
+
+                                            <!-- Right -->
+                                            <div class="right">
+                                                <h3>For The People</h3>
+                                                <p>$PONCHO was created to make a community that would be family friendly and inviting for all on BASE. With the introduction of Coinbase Smart Wallet we believe Poncho can serve as a friendly guide to first time crypto users.</p>
+                                                <p>The official Coinbase account said they were planning to "send" all the cute cats on BASE and Poncho is the cutest!</p>
+                                                <a class="button button--blue" href="https://app.uniswap.org/swap?chain=base&inputCurrency=ETH&outputCurrency=0xC2fE011C3885277c7F0e7ffd45Ff90cADc8ECD12" target="_blank">Buy Now</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <!-- Next -->
-                    <button type="button" class="button button--dark swiper-next" title="Swiper Next"><span><i class="fas fa-chevron-circle-right"></i></span></button>
+                        <!-- Next -->
+                        <button type="button" class="button swiper-next" title="Swiper Next"><span><i class="fa-solid fa-chevron-right"></i></span></button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -304,7 +319,7 @@
                     <!-- Roadmap swiper -->
                     <div class="flexbox flexbox--vertical roadmap-swiper">
                         <!-- Prev -->
-                        <button type="button" class="button button--dark swiper-prev" title="Swiper Prev"><span><i class="fa-solid fa-chevron-left"></i></span></button>
+                        <button type="button" class="button swiper-prev" title="Swiper Prev"><span><i class="fa-solid fa-chevron-left"></i></span></button>
 
                         <!-- Swiper -->
                         <div class="swiper" data-swiper="roadmap-swiper">
@@ -358,7 +373,7 @@
                         </div>
 
                         <!-- Next -->
-                        <button type="button" class="button button--dark swiper-next" title="Swiper Next"><span><i class="fa-solid fa-chevron-right"></i></span></button>
+                        <button type="button" class="button swiper-next" title="Swiper Next"><span><i class="fa-solid fa-chevron-right"></i></span></button>
                     </div>
                 </div>
             </div>

@@ -22,6 +22,9 @@ function initialize_app() {
         // Init lazy load
         init_lazy_load();
 
+        // Init particles
+        init_particles();
+
         // Init swipers
         init_swipers();
         

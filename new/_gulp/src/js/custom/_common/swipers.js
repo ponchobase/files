@@ -20,12 +20,10 @@ function init_about_swiper() {
         new Swiper(data_swiper, {
             // Optional parameters
             direction: "horizontal",
-            freeMode: true,
             keyboard: {
                 enabled: true,
                 onlyInViewport: false,
             },
-            loop: true,
             mousewheel: {
                 forceToAxis: true
             },
@@ -36,6 +34,7 @@ function init_about_swiper() {
             slidesPerView: "auto",
             slidesPerGroup: 1,
             spaceBetween: 16,
+            speed: 600,
             updateOnWindowResize: true
         });
     } catch (e) {
