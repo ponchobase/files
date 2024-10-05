@@ -1149,6 +1149,21 @@ section.poncho-pals .container .explore img {
   margin-right: 5px;
   width: 40px;
 }
+section.roadmap .roadmap-swiper .swiper-next,
+section.roadmap .roadmap-swiper .swiper-prev {
+  background: none;
+  font-size: 2rem;
+}
+section.roadmap .roadmap-swiper .swiper-next.swiper-button-disabled,
+section.roadmap .roadmap-swiper .swiper-prev.swiper-button-disabled {
+  opacity: 0.5;
+}
+section.roadmap .roadmap-swiper .swiper-next {
+  margin-left: 10px;
+}
+section.roadmap .roadmap-swiper .swiper-prev {
+  margin-right: 10px;
+}
 section.roadmap .roadmap-swiper .swiper {
   display: inline-block;
   max-width: 100%;
@@ -1196,6 +1211,11 @@ section.roadmap .roadmap-swiper .swiper .swiper-wrapper .swiper-slide .phase ul 
   section.poncho-pals .container {
     padding: 20px;
   }
+  section.roadmap .roadmap-swiper .swiper-next,
+  section.roadmap .roadmap-swiper .swiper-prev {
+    font-size: 1.5rem;
+    padding: 10px 15px;
+  }
 }
 @media screen and (max-width: 768px) {
   section .inner {
@@ -1203,6 +1223,11 @@ section.roadmap .roadmap-swiper .swiper .swiper-wrapper .swiper-slide .phase ul 
   }
   section.poncho-pals .container {
     padding: 15px;
+  }
+  section.roadmap .roadmap-swiper .swiper-next,
+  section.roadmap .roadmap-swiper .swiper-prev {
+    font-size: 1.25rem;
+    padding: 10px;
   }
 }
 /************************  *************************/
