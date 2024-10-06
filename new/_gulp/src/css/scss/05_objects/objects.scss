@@ -13,6 +13,10 @@
 /************************  *************************/
 
 .background {
+    &--blue {
+        background: var(--poncho_blue);
+    }
+
     &--blue-dark {
         background: var(--poncho_blue_dark);
     }

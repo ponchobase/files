@@ -55,6 +55,7 @@ gulp.task("dist-js", () => {
         "./src/js/custom/_common/charts.js",
         "./src/js/custom/_common/particles.js",
         "./src/js/custom/_common/scroll.js",
+        "./src/js/custom/_common/sections.js",
         "./src/js/custom/_common/swipers.js",
         "./src/js/custom/_common/token.js"
     ])
