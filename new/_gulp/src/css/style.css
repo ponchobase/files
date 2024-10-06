@@ -12,6 +12,7 @@
   --poncho_grey: #eff2f5;
   --poncho_grey_dark: #545454;
   --poncho_orange: #ff9900;
+  --poncho_purple: #1d104c;
   --poncho_red: #e6453f;
   --poncho_white: #fbffef;
 }
@@ -1131,29 +1132,41 @@ section.home .left .links li a img {
   height: 100%;
 }
 section.home .left .contract {
+  -webkit-transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   background: var(--poncho_grey);
   border-radius: 10px;
   margin: 30px 0 0;
   padding-right: 10px;
   position: relative;
+  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
 }
 section.home .left .contract[aria-label]:focus:after, section.home .left .contract[aria-label]:hover:after {
-  position: absolute;
-  z-index: 1;
-  top: -2em;
-  left: 0;
-  display: block;
-  overflow: hidden;
-  width: 17em;
-  height: 2em;
-  border-radius: 0.2em;
-  padding: 0 0.7em;
+  background: var(--poncho_purple);
+  border-radius: 5px;
   content: attr(aria-label);
-  color: #fff;
-  background: #000;
-  font-size: 1em;
+  display: block;
+  font-size: 0.75rem;
   line-height: 2em;
-  text-align: left;
+  overflow: hidden;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+  top: -1.75rem;
+  z-index: 1;
+}
+section.home .left .contract.copied[aria-label]:after, section.home .left .contract.copied[aria-label]:after {
+  background: var(--poncho_green);
+  border-radius: 5px;
+  content: attr(aria-describedby);
+  display: block;
+  font-size: 0.75rem;
+  line-height: 2em;
+  overflow: hidden;
+  padding: 0 10px;
+  position: absolute;
+  right: 0;
+  top: -1.75rem;
+  z-index: 1;
 }
 section.home .left .contract img {
   height: 50px;

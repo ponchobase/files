@@ -31,6 +31,27 @@ function check_value_defined(value) {
     return value;
 }
 
+function copy_to_clipboard(e, selector) {
+    try {
+        // Vars
+        var selector_parent = $(e.currentTarget).closest(selector);
+
+        // Copy to clipboard
+        navigator.clipboard.writeText(e.currentTarget.value);
+
+        // Add class
+        $(selector_parent).addClass("copied");
+
+        // Set timeout
+        setTimeout(function () {
+            // Remove class
+            $(selector_parent).removeClass("copied");
+        }, 2000);
+    } catch (e) {
+        // console.error(e);
+    }
+}
+
 function format_number_decimals(value) {
     try {
         // Check if
