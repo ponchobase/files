@@ -583,6 +583,9 @@ section {
   top: 0;
   width: 100%;
 }
+.background--orange {
+  background: var(--poncho_orange);
+}
 
 .col-50 {
   float: left;
