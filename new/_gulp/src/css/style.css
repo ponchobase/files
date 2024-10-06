@@ -6,7 +6,7 @@
 /************************  *************************/
 :root {
   --poncho_blue: #1d1fff;
-  --poncho_blue_hover: #0103ff;
+  --poncho_blue_hover: #1d48ff;
   --poncho_blue_dark: #1d1a7a;
   --poncho_green: #14c85c;
   --poncho_grey: #eff2f5;
@@ -787,6 +787,10 @@ section {
   padding: 20px;
   text-transform: none;
   width: 100%;
+}
+.accordions__container .accordion__header .trigger:hover {
+  background: var(--poncho_blue_hover);
+  color: var(--poncho_white);
 }
 .accordions__container .accordion__header .trigger .title {
   -webkit-transition: margin 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
