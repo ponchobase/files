@@ -166,19 +166,37 @@ section {
                     display: inline-block;
                     margin: 30px;
                     padding: 30px;
-        
+
                     .column {
                         display: inline-block;
+                        text-align: center;
                         width: 100%;
+
+                        .top {
+                            .hidden {
+                                display: inline-block;
+                                visibility: hidden;
+                                width: 0;
+                            }
+                            
+                            .value {
+                                margin: 0;
+                            }
+                        }
+
+                        .bottom {
+                            font-size: 0.75rem;
+                            font-style: italic;
+                        }
                     }
                 }
             }
-    
+
             @keyframes scroll {
                 from {
                     transform: translateX(0);
                 }
-    
+
                 to {
                     transform: translateX(calc(-100% - var(--gap)));
                 }
@@ -186,11 +204,11 @@ section {
         }
     }
 
-    &.divider{
+    &.divider {
         border-bottom: 2px solid var(--poncho_white);
         border-top: 2px solid var(--poncho_white);
 
-        .h2 {
+        .h3 {
             color: var(--poncho_white);
             margin: 30px;
         }

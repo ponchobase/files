@@ -3,6 +3,9 @@ function init_sections() {
         // Home
         // Copy home marquee content
         clone_home_marquee_content();
+
+        // Init number counters
+        init_number_counters();
     } catch (e) {
         // console.error(e);
     }

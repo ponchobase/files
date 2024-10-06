@@ -106,11 +106,36 @@ function update_token_ui(pair) {
                 // Vars
                 var price_change = check_value_defined(pair.priceChange.h24);
                 var price_string = format_value_percent(price, price_change);
+                var market_cap = check_value_defined(pair.marketCap);
+                var volume = check_value_defined(pair.volume.h24);
+                var buys = check_value_defined(pair.txns.h24.buys);
+                var sells = check_value_defined(pair.txns.h24.sells);
+                var transactions = buys + sells;
+                var liquidity =  check_value_defined(pair.liquidity.usd);
 
                 // Check if
                 if (price_string) {
                     // Append
                     $("[data-token=price]").html(price_string);
+
+                    // Market cap
+                    $("[data-token=market_cap]").attr("data-number", market_cap);
+                    $("[data-token=market_cap]").closest(".number-counter").addClass("count");
+
+                    // Volume
+                    $("[data-token=volume]").attr("data-number", volume);
+                    $("[data-token=volume]").closest(".number-counter").addClass("count");
+
+                    // Transactions
+                    $("[data-token=transactions]").attr("data-number", transactions);
+                    $("[data-token=transactions]").closest(".number-counter").addClass("count");
+
+                    // Liquidity
+                    $("[data-token=liquidity]").attr("data-number", liquidity);
+                    $("[data-token=liquidity]").closest(".number-counter").addClass("count");
+
+                    // Init number counters
+                    init_number_counters();
 
                     // Vars
                     price_found = true;

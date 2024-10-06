@@ -103,12 +103,16 @@
     white-space: nowrap;
 }
 
-.padding-left {
-    padding-left: 10px;
-}
+.padding {
+    &--none {
+        &-bottom {
+            padding-bottom: 0 !important;
+        }
+    }
 
-.padding-right {
-    padding-right: 10px;
+    &--right {
+        padding-right: 10px;
+    }
 }
 
 .right {
