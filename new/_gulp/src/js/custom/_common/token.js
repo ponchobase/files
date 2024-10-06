@@ -45,20 +45,20 @@ function read_token_backup() {
                 var pairs = check_array_defined(response.pairs);
 
                 // Check if
-                if(pairs){
+                if (pairs) {
                     // Loop
-                    $.each(pairs, function(index, value){
+                    $.each(pairs, function (index, value) {
                         // Vars
                         var address = check_value_defined(value.baseToken.address);
                         var symbol = check_value_defined(value.baseToken.symbol);
                         var chain_id = check_value_defined(value.chainId);
-                        
+
                         // Check if
-                        if(
+                        if (
                             address == "0xC2fE011C3885277c7F0e7ffd45Ff90cADc8ECD12" &&
                             symbol == "PONCHO" &&
                             chain_id == "base"
-                        ){
+                        ) {
                             // Update token ui
                             update_token_ui(value);
 
@@ -95,29 +95,35 @@ function update_token_ui(pair) {
     // Define vars
     var price_found = false;
 
-    // Check if
-    if (pair) {
-        // Vars
-        var price = check_value_defined(pair.priceUsd);
-
+    try {
         // Check if
-        if (price) {
+        if (pair) {
             // Vars
-            var price_change = check_value_defined(pair.priceChange.h24);
-            var price_string = format_value_percent(price, price_change);
+            var price = check_value_defined(pair.priceUsd);
 
             // Check if
-            if (price_string) {
-                // Append
-                $("[data-token=price]").html(price_string);
-
+            if (price) {
                 // Vars
-                price_found = true;
+                var price_change = check_value_defined(pair.priceChange.h24);
+                var price_string = format_value_percent(price, price_change);
 
-                // Title
-                document.title = "$PONCHO: " + price + " (" + price_change + "%) | Poncho on BASE";
+                // Check if
+                if (price_string) {
+                    // Append
+                    $("[data-token=price]").html(price_string);
+
+                    // Vars
+                    price_found = true;
+
+                    // Title
+                    document.title = "$PONCHO: " + price + " (" + price_change + "%) | Poncho on BASE";
+                }
             }
         }
+
+
+    } catch (e) {
+        // console.error(e);
     }
 
     // Return

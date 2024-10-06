@@ -135,6 +135,111 @@ section {
                 max-width: 500px;
             }
         }
+
+        .marquee_2 {
+            --gap: 0rem;
+            display: flex;
+            overflow: hidden;
+            user-select: none;
+            gap: var(--gap);
+            
+            &:hover {
+                .marquee__content {
+                    animation-play-state: paused !important;
+                }
+            }
+          }
+          
+          .marquee__content {
+            flex-shrink: 0;
+            display: flex;
+            justify-content: space-around;
+            min-width: 100%;
+            gap: var(--gap);
+            animation: scroll 38s linear infinite;
+          }
+
+          @keyframes scroll {
+            from {
+              transform: translateX(0);
+            }
+            to {
+              transform: translateX(calc(-100% - var(--gap)));
+            }
+          }
+
+          .stat {
+            background: var(--poncho_blue_dark);
+            border-radius: 25px;
+            box-shadow: rgba(29, 31, 255, 0.7) 0px 0px 24px 0px;
+            display: inline-block;
+            margin: 30px;
+            padding: 30px;
+
+            .number-counter-column {
+                display: inline-block;
+                width: 100%;
+            }
+        }
+
+        .container {
+            overflow: hidden;
+
+            .inner_container {
+                overflow: hidden;
+                white-space: nowrap;
+
+                &:hover {
+                    &>div {
+                        animation-play-state: paused !important;
+                    }
+                }
+
+                .marquee {
+                    -webkit-animation: marquee 0s linear infinite;
+                    animation: marquee 0s linear infinite;
+                    display: inline-block;
+                    min-width: 100%;
+                    will-change: transform;
+
+                    .item {
+                        font-weight: 600;
+                        margin: 0 10px;
+                    }
+                }
+
+                @keyframes marquee {
+                    from {
+                        transform: translateX(0%);
+                    }
+
+                    to {
+                        transform: translateX(-100%);
+                    }
+                }
+            }
+        }
+
+        .home-swiper {
+            .swiper {
+                .swiper-wrapper {
+                    transition-timing-function: linear;
+
+                    .swiper-slide {
+                        width: auto;
+
+                        .stat {
+                            background: var(--poncho_blue_dark);
+                            border-radius: 25px;
+                            box-shadow: rgba(29, 31, 255, 0.7) 0px 0px 24px 0px;
+                            display: inline-block;
+                            margin: 30px;
+                            padding: 30px;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     &.about {
@@ -144,9 +249,11 @@ section {
                     .swiper-slide {
                         width: 100%;
                     }
+
                 }
             }
         }
+
     }
 
     &.poncho-pals {
