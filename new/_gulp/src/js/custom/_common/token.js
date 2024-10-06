@@ -1,7 +1,7 @@
 function read_token() {
     try {
         // Define vars
-        var price_found = false;
+        var pair_found = false;
 
         // Read token
         $.ajax({
@@ -14,7 +14,7 @@ function read_token() {
                 var pair = check_value_defined(response.pair);
 
                 // Update token ui
-                price_found = update_token_ui(pair);
+                pair_found = update_token_ui(pair);
             },
             error: function (XMLHttpRequest, textStatus, errorThrown) {
                 // console.error(errorThrown);
@@ -22,7 +22,7 @@ function read_token() {
         }).always(() => {
             // nprogress_end();
             // Check if
-            if (!price_found) {
+            if (!pair_found) {
                 // Read token backup
                 read_token_backup();
             }
@@ -93,7 +93,7 @@ function set_read_token_interval() {
 
 function update_token_ui(pair) {
     // Define vars
-    var price_found = false;
+    var pair_found = false;
 
     try {
         // Check if
@@ -138,7 +138,7 @@ function update_token_ui(pair) {
                     init_number_counters();
 
                     // Vars
-                    price_found = true;
+                    pair_found = true;
 
                     // Title
                     document.title = "$PONCHO: " + price + " (" + price_change + "%) | Poncho on BASE";
@@ -152,5 +152,5 @@ function update_token_ui(pair) {
     }
 
     // Return
-    return price_found;
+    return pair_found;
 }
