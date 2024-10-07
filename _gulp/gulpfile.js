@@ -56,13 +56,12 @@ gulp.task("dist-js", () => {
         "./src/js/custom/_common/number_counters.js",
         "./src/js/custom/_common/particles.js",
         "./src/js/custom/_common/scroll.js",
-        "./src/js/custom/_common/sections.js",
         "./src/js/custom/_common/swipers.js",
         "./src/js/custom/_common/token.js"
     ])
         .pipe(concat("poncho.min.js"))
         // .pipe(sourcemaps.init())
-        .pipe(uglify())
+        // .pipe(uglify())
         // .pipe(sourcemaps.write("."))
         .pipe(gulp.dest("../dist/js"));
 });

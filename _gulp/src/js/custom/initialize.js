@@ -25,9 +25,6 @@ function initialize_app() {
         // Init particles
         init_particles();
 
-        // Init sections
-        init_sections();
-
         // Init swipers
         init_swipers();
         
