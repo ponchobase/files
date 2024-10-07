@@ -17,6 +17,7 @@ section {
     &.home {
         .left {
             padding-right: 4rem;
+            width: 60%;
 
             .heading {
                 margin: 0 0 20px;
@@ -130,9 +131,12 @@ section {
         }
 
         .right {
+            width: 40%;
+
             img {
                 float: left;
                 max-width: 500px;
+                width: 100%;
             }
         }
 
@@ -178,7 +182,7 @@ section {
                                 visibility: hidden;
                                 width: 0;
                             }
-                            
+
                             .value {
                                 margin: 0;
                             }
@@ -214,9 +218,9 @@ section {
         }
 
         img {
-            height: 50px;
-            margin: 0 10px 0 20px;
-            width: 50px;
+            height: 30px;
+            margin: 0 5px 0 10px;
+            width: 30px;
         }
     }
 
@@ -226,6 +230,31 @@ section {
                 .swiper-wrapper {
                     .swiper-slide {
                         width: 100%;
+
+                        .lore {
+                            background: transparent;
+                            background: linear-gradient(90deg, rgba(29,31,255,1) 0%, rgba(29,26,122,1) 40%);
+                            border-radius: 25px;
+                            padding: 30px;
+
+                            .left,
+                            .right {
+                                padding: 30px;
+                            }
+
+                            .left {
+                                img {
+                                    border-radius: 5px;
+                                    max-width: 350px;
+                                }
+                            }
+
+                            .right {
+                                .button {
+                                    margin-top: 15px;
+                                }
+                            }
+                        }
                     }
 
                 }

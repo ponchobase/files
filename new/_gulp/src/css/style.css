@@ -1102,6 +1102,7 @@ section .inner {
 }
 section.home .left {
   padding-right: 4rem;
+  width: 60%;
 }
 section.home .left .heading {
   margin: 0 0 20px;
@@ -1193,9 +1194,13 @@ section.home .left .contract i {
   pointer-events: none;
   z-index: 1;
 }
+section.home .right {
+  width: 40%;
+}
 section.home .right img {
   float: left;
   max-width: 500px;
+  width: 100%;
 }
 section.home .home-marquee {
   --gap: 0rem;
@@ -1259,12 +1264,29 @@ section.divider .h3 {
   margin: 30px;
 }
 section.divider img {
-  height: 50px;
-  margin: 0 10px 0 20px;
-  width: 50px;
+  height: 30px;
+  margin: 0 5px 0 10px;
+  width: 30px;
 }
 section.about .about-swiper .swiper .swiper-wrapper .swiper-slide {
   width: 100%;
+}
+section.about .about-swiper .swiper .swiper-wrapper .swiper-slide .lore {
+  background: transparent;
+  background: linear-gradient(90deg, rgb(29, 31, 255) 0%, rgb(29, 26, 122) 40%);
+  border-radius: 25px;
+  padding: 30px;
+}
+section.about .about-swiper .swiper .swiper-wrapper .swiper-slide .lore .left,
+section.about .about-swiper .swiper .swiper-wrapper .swiper-slide .lore .right {
+  padding: 30px;
+}
+section.about .about-swiper .swiper .swiper-wrapper .swiper-slide .lore .left img {
+  border-radius: 5px;
+  max-width: 350px;
+}
+section.about .about-swiper .swiper .swiper-wrapper .swiper-slide .lore .right .button {
+  margin-top: 15px;
 }
 section.poncho-pals img {
   position: relative;
