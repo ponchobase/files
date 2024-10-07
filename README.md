@@ -42,6 +42,10 @@ Listen 80
 
 ## Acknowledgments
 
+* [Chart.js](https://www.chartjs.org/)
+* [DEX Screener](https://docs.dexscreener.com/api/reference)
 * [Font Awesome](https://fontawesome.com/)
-* [jQuery](https://jquery.com/download/)
+* [jQuery](https://jquery.com/)
+* [particles.js](https://vincentgarreau.com/particles.js/)
 * [RealFaviconGenerator](https://realfavicongenerator.net/)
+* [Swiper](https://swiperjs.com/swiper-api)
