@@ -143,24 +143,26 @@ section {
         }
 
         .home-marquee {
-            -ms-overflow-style: none;  /* IE and Edge */
+            -ms-overflow-style: none;
             overflow-y: auto;
-            scrollbar-width: none;  /* Firefox */
+            scrollbar-width: none;
 
             &::-webkit-scrollbar {
                 display: none;
-              }
+            }
 
             .container {
                 --gap: 0rem;
                 display: flex;
+                overflow: hidden;
                 user-select: none;
                 gap: var(--gap);
 
                 &:hover {
-                    .content {
-                        animation-play-state: paused !important;
-                    }
+                    overflow: unset;
+                    // .content {
+                    //     animation-play-state: paused !important;
+                    // }
                 }
 
                 .content {

@@ -1239,9 +1239,9 @@ section.home .right img {
   width: 100%;
 }
 section.home .home-marquee {
-  -ms-overflow-style: none; /* IE and Edge */
+  -ms-overflow-style: none;
   overflow-y: auto;
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none;
 }
 section.home .home-marquee::-webkit-scrollbar {
   display: none;
@@ -1249,11 +1249,12 @@ section.home .home-marquee::-webkit-scrollbar {
 section.home .home-marquee .container {
   --gap: 0rem;
   display: flex;
+  overflow: hidden;
   user-select: none;
   gap: var(--gap);
 }
-section.home .home-marquee .container:hover .content {
-  animation-play-state: paused !important;
+section.home .home-marquee .container:hover {
+  overflow: unset;
 }
 section.home .home-marquee .container .content {
   animation: scroll 38s linear infinite;
