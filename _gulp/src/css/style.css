@@ -1239,7 +1239,7 @@ section.home .right img {
   width: 100%;
 }
 section.home .home-swiper {
-  margin: 30px;
+  margin: 30px 15px;
 }
 section.home .home-swiper .number-counter {
   background: var(--poncho_blue_dark);
@@ -1402,8 +1402,12 @@ section.faq img {
     max-width: 350px;
     top: -20px;
   }
+  section.home .home-swiper {
+    margin: 30px 10px;
+  }
   section.home .home-swiper .number-counter {
     margin: 30px 15px;
+    padding: 30px 15px;
   }
   section.about .about-swiper .swiper .swiper-wrapper .swiper-slide .lore {
     background: none;
