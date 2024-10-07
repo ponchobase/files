@@ -110,7 +110,7 @@ function format_value_percent(value, percent) {
             var change_direction = get_change_direction(percent);
 
             // Vars
-            return_string = `<span class="font--bold font--${change_color}">${change_direction} ${value} (${percent}%)</span>`;
+            return_string = `<span class="font--bold font--${change_color}">${change_direction} $${value} (${percent}%)</span>`;
         }
     } catch (e) {
         // console.error(e);
