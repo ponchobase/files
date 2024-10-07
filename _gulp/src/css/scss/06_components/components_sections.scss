@@ -137,6 +137,7 @@ section {
             img {
                 float: left;
                 max-width: 500px;
+                position: relative;
                 width: 100%;
             }
         }
@@ -415,8 +416,17 @@ section {
         }
 
         &.home {
+            .inner {
+                padding: 0 15px;
+            }
+
             .contract {
                 margin: 30px auto 0 !important;
+            }
+
+            .right img {
+                max-width: 350px;
+                top: -20px;
             }
         }
 
