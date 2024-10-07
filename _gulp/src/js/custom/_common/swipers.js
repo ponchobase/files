@@ -33,7 +33,6 @@ function init_about_swiper() {
             },
             slidesPerView: "auto",
             slidesPerGroup: 1,
-            spaceBetween: 16,
             speed: 600,
             updateOnWindowResize: true
         });

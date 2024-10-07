@@ -1396,6 +1396,11 @@ section.faq img {
 /************************  *************************/
 /* 		        Sections - Mobile   		       */
 /************************  *************************/
+@media screen and (max-width: 1200px) {
+  section.about .about-swiper .swiper .swiper-wrapper .swiper-slide .lore .left img {
+    max-width: 250px;
+  }
+}
 @media screen and (max-width: 1024px) {
   section .inner {
     padding: 60px 30px;

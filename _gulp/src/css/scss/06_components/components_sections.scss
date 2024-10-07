@@ -386,7 +386,27 @@ section {
 
 // @include media("xxl") {}
 
-// @include media("xl") {}
+@include media("xl") {
+    section {
+        &.about {
+            .about-swiper {
+                .swiper {
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            .lore {
+                                .left {
+                                    img {
+                                        max-width: 250px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 @include media("lg") {
     section {
