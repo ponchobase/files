@@ -158,13 +158,6 @@ section {
                 user-select: none;
                 gap: var(--gap);
 
-                &:hover {
-                    overflow: unset;
-                    // .content {
-                    //     animation-play-state: paused !important;
-                    // }
-                }
-
                 .content {
                     animation: scroll 38s linear infinite;
                     display: flex;
@@ -438,6 +431,10 @@ section {
             .right img {
                 max-width: 350px;
                 top: -20px;
+            }
+
+            .home-marquee .container .content .number-counter {
+                margin: 30px 20px;
             }
         }
 

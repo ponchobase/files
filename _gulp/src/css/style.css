@@ -1253,9 +1253,6 @@ section.home .home-marquee .container {
   user-select: none;
   gap: var(--gap);
 }
-section.home .home-marquee .container:hover {
-  overflow: unset;
-}
 section.home .home-marquee .container .content {
   animation: scroll 38s linear infinite;
   display: flex;
@@ -1434,6 +1431,9 @@ section.faq img {
   section.home .right img {
     max-width: 350px;
     top: -20px;
+  }
+  section.home .home-marquee .container .content .number-counter {
+    margin: 30px 20px;
   }
   section.about .about-swiper .swiper .swiper-wrapper .swiper-slide .lore {
     background: none;
