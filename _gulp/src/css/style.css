@@ -1238,14 +1238,6 @@ section.home .right img {
   position: relative;
   width: 100%;
 }
-section.home .home-marquee {
-  -ms-overflow-style: none;
-  overflow-y: auto;
-  scrollbar-width: none;
-}
-section.home .home-marquee::-webkit-scrollbar {
-  display: none;
-}
 section.home .home-marquee .container {
   --gap: 0rem;
   display: flex;
@@ -1254,6 +1246,7 @@ section.home .home-marquee .container {
   gap: var(--gap);
 }
 section.home .home-marquee .container .content {
+  -webkit-animation: scroll 38s linear infinite;
   animation: scroll 38s linear infinite;
   display: flex;
   flex-shrink: 0;

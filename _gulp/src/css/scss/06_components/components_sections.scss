@@ -143,14 +143,6 @@ section {
         }
 
         .home-marquee {
-            -ms-overflow-style: none;
-            overflow-y: auto;
-            scrollbar-width: none;
-
-            &::-webkit-scrollbar {
-                display: none;
-            }
-
             .container {
                 --gap: 0rem;
                 display: flex;
@@ -159,6 +151,7 @@ section {
                 gap: var(--gap);
 
                 .content {
+                    -webkit-animation: scroll 38s linear infinite;
                     animation: scroll 38s linear infinite;
                     display: flex;
                     flex-shrink: 0;
