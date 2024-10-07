@@ -70,6 +70,7 @@ section {
                 background: var(--poncho_grey);
                 border-radius: 10px;
                 margin: 30px 0 0;
+                max-width: 600px;
                 padding-right: 10px;
                 position: relative;
                 transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -233,7 +234,7 @@ section {
 
                         .lore {
                             background: transparent;
-                            background: linear-gradient(90deg, rgba(29,31,255,1) 0%, rgba(29,26,122,1) 40%);
+                            background: linear-gradient(90deg, rgba(29, 31, 255, 1) 0%, rgba(29, 26, 122, 1) 40%);
                             border-radius: 25px;
                             padding: 30px;
 
@@ -391,6 +392,36 @@ section {
     section {
         .inner {
             padding: 60px 30px;
+        }
+
+        &.home {
+            .contract {
+                margin: 30px auto 0 !important;
+            }
+        }
+
+        &.about {
+            .about-swiper {
+                .swiper {
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            .lore {
+                                background: none;
+                                padding: 0;
+
+                                .left,
+                                .right {
+                                    padding: 0;
+                                }
+
+                                .left {
+                                    padding-bottom: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         &.poncho-pals {

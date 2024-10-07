@@ -40,7 +40,35 @@
 
 // @include media("xl") {}
 
-// @include media("lg") {}
+@include media("lg") {
+    .flexbox {
+        &--mobile {
+            flex-direction: column !important;
+
+            img:not(.mobile-ignore) {
+                float: none !important;
+                width: 100% !important;
+            }
+
+            .left,
+            .right {
+                padding: 0 !important;
+            }
+
+            .left {
+                width: 100% !important;
+                padding-bottom: 20px !important;
+                text-align: center !important;
+            }
+
+            .right {
+                float: none !important;
+                text-align: center;
+                width: 100% !important;
+            }
+        }
+    }
+}
 
 // @include media("md") {}
 
