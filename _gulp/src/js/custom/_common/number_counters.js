@@ -34,6 +34,9 @@ function animate_count_value(this_text, count_value) {
                         // No commas
                         this_text.text(this.countNum);
                     }
+
+                    // Update swiper
+                    poncho_json.home_swiper.update();
                 },
             });
     } catch (e) {

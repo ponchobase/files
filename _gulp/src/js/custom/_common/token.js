@@ -137,6 +137,9 @@ function update_token_ui(pair) {
                     // Init number counters
                     init_number_counters();
 
+                    // Update swiper
+                    poncho_json.home_swiper.update();
+
                     // Vars
                     pair_found = true;
 

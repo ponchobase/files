@@ -47,6 +47,8 @@ gulp.task("dist-js-vendor", () => {
 gulp.task("dist-js", () => {
     return gulp.src([
         // Custom
+        // Json
+        "./src/js/custom/_json/poncho.js",
         // Init
         "./src/js/custom/initialize.js",
         // Common
@@ -56,7 +58,6 @@ gulp.task("dist-js", () => {
         "./src/js/custom/_common/number_counters.js",
         "./src/js/custom/_common/particles.js",
         "./src/js/custom/_common/scroll.js",
-        "./src/js/custom/_common/sections.js",
         "./src/js/custom/_common/swipers.js",
         "./src/js/custom/_common/token.js"
     ])
