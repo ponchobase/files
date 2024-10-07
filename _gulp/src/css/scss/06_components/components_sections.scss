@@ -151,8 +151,8 @@ section {
                 gap: var(--gap);
 
                 .content {
-                    -webkit-animation: scroll 38s linear infinite;
-                    animation: scroll 38s linear infinite;
+                    -webkit-animation: marquee 38s linear infinite;
+                    animation: marquee 38s linear infinite;
                     display: flex;
                     flex-shrink: 0;
                     gap: var(--gap);
@@ -194,7 +194,7 @@ section {
                     }
                 }
 
-                @keyframes scroll {
+                @keyframes marquee {
                     from {
                         transform: translateX(0);
                     }
