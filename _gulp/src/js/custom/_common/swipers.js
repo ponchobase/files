@@ -53,8 +53,6 @@ function init_home_swiper() {
         // Init new swiper
         poncho_json.home_swiper = new Swiper(data_swiper, {
             // Optional parameters
-            centeredSlides: true,
-            centeredSlidesBounds: true,
             direction: "horizontal",
             keyboard: {
                 enabled: true,
