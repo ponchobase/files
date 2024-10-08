@@ -476,6 +476,16 @@ section {
 
         &.home {
             .left {
+                .heading {
+                    margin: 0 0 20px;
+
+                    h1 {
+                        display: block;
+                        padding: 0;
+                        padding-bottom: 10px;
+                    }
+                }
+
                 .links {
                     li a {
                         width: 45px;
