@@ -281,6 +281,18 @@ function init_lazy_load() {
     }
 }
 
+function init_popstate() {
+    try {
+        // On browser popstate
+        $(window).on("popstate", function (event) {
+            // Load modal from url
+            load_modal_from_url();
+        });
+    } catch (e) {
+        // console.error(e);
+    }
+}
+
 function throttle(callback, limit) {
     try {
         // Vars

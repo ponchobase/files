@@ -28,6 +28,9 @@ function initialize_app() {
         // Init particles
         init_particles();
 
+        // Init popstate
+        init_popstate();
+
         // Init swipers
         init_swipers();
         
