@@ -1248,11 +1248,12 @@ section.home .left .description {
 }
 section.home .left [data-modal-button=buy] {
   font-size: 1.25rem;
+  margin-top: 5px;
 }
 section.home .left .links {
   display: inline-block;
   list-style: none;
-  margin: 20px 0 0;
+  margin: 30px 0 0;
   overflow-x: auto;
   padding: 0;
   white-space: nowrap;
@@ -1285,7 +1286,7 @@ section.home .left .contract {
   -webkit-transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   background: var(--poncho_grey);
   border-radius: 10px;
-  margin: 30px 0 0;
+  margin: 10px 0 0;
   max-width: 600px;
   padding-right: 10px;
   position: relative;
@@ -1502,7 +1503,7 @@ section.faq img {
     padding: 0 15px;
   }
   section.home .contract {
-    margin: 30px auto 0 !important;
+    margin: 10px auto 0 !important;
   }
   section.home .right img {
     max-width: 350px;
