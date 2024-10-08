@@ -34,6 +34,10 @@ section {
                 margin-bottom: 20px;
             }
 
+            [data-modal-button=buy] {
+                font-size: 1.25rem
+            }
+
             .links {
                 display: inline-block;
                 list-style: none;
@@ -47,6 +51,10 @@ section {
 
                     &:first-child {
                         padding-left: 0;
+                    }
+
+                    &:last-child {
+                        padding-right: 0;
                     }
 
                     a {
@@ -461,6 +469,17 @@ section {
     section {
         .inner {
             padding: 50px 15px;
+        }
+
+        &.home {
+            .left {
+                .links {
+                    li a {
+                        width: 45px;
+                        height: 45px;
+                    }
+                }
+            }
         }
 
         &.poncho-pals {

@@ -1246,6 +1246,9 @@ section.home .left .description {
   line-height: 1.85rem;
   margin-bottom: 20px;
 }
+section.home .left [data-modal-button=buy] {
+  font-size: 1.25rem;
+}
 section.home .left .links {
   display: inline-block;
   list-style: none;
@@ -1258,6 +1261,9 @@ section.home .left .links li {
 }
 section.home .left .links li:first-child {
   padding-left: 0;
+}
+section.home .left .links li:last-child {
+  padding-right: 0;
 }
 section.home .left .links li a {
   border-radius: 50%;
@@ -1527,6 +1533,10 @@ section.faq img {
 @media screen and (max-width: 768px) {
   section .inner {
     padding: 50px 15px;
+  }
+  section.home .left .links li a {
+    width: 45px;
+    height: 45px;
   }
   section.poncho-pals .container {
     padding: 15px;
