@@ -100,7 +100,7 @@
                 </div>
 
                 <!-- Buy now -->
-                <a class="button button--blue" href="https://app.uniswap.org/swap?chain=base&inputCurrency=ETH&outputCurrency=0xC2fE011C3885277c7F0e7ffd45Ff90cADc8ECD12" target="_blank">Buy Now</a>
+                <button class="button button--blue" data-modal-button="buy">Buy Now</a>
             </div>
         </div>
     </header>
@@ -817,6 +817,39 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modals -->
+    <div class="modals">
+        <!-- Modal -->
+        <div class="modal" data-modal="buy">
+            <!-- Background -->
+            <div class="modal__background"></div>
+
+            <!-- Content -->
+            <div class="modal__content">
+                <!-- Header -->
+                <div class="header">
+                    <!-- Gradient -->
+                    <div class="header-gradient"></div>
+    
+                     <!-- Content -->
+                    <div class="header-content">
+                        <!-- Title -->
+                        <h2 class="h3 title">Buy $PONCHO</h2>
+                        
+                        <!-- Close -->
+                        <button class="close" type="button"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
+                </div>
+
+                <!-- Body -->
+                <div class="body">
+                    <!-- Uniswap -->
+                    <iframe src="https://app.uniswap.org/swap?chain=base&inputCurrency=ETH&outputCurrency=0xC2fE011C3885277c7F0e7ffd45Ff90cADc8ECD12" scrolling="no" width="100%" height="720" frameborder="0" allow="fullscreen"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Scroll to top -->
     <button class="button button--blue" id="scroll-top" type="button" title="Scroll to Top">

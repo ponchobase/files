@@ -55,6 +55,7 @@ gulp.task("dist-js", () => {
         "./src/js/custom/_common/_common.js",
         "./src/js/custom/_common/accordions.js",
         "./src/js/custom/_common/charts.js",
+        "./src/js/custom/_common/modals.js",
         "./src/js/custom/_common/number_counters.js",
         "./src/js/custom/_common/particles.js",
         "./src/js/custom/_common/scroll.js",
@@ -63,7 +64,7 @@ gulp.task("dist-js", () => {
     ])
         .pipe(concat("poncho.min.js"))
         // .pipe(sourcemaps.init())
-        .pipe(uglify())
+        // .pipe(uglify())
         // .pipe(sourcemaps.write("."))
         .pipe(gulp.dest("../dist/js"));
 });

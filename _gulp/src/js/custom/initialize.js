@@ -22,6 +22,9 @@ function initialize_app() {
         // Init lazy load
         init_lazy_load();
 
+        // Init modals
+        init_modals();
+
         // Init particles
         init_particles();
 

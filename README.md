@@ -43,7 +43,7 @@ Listen 80
 ## Acknowledgments
 
 * [Chart.js](https://www.chartjs.org/)
-* [DEX Screener](https://docs.dexscreener.com/api/reference)
+* [DEX Screener API](https://docs.dexscreener.com/api/reference)
 * [Font Awesome](https://fontawesome.com/)
 * [jQuery](https://jquery.com/)
 * [particles.js](https://vincentgarreau.com/particles.js/)

@@ -52,6 +52,38 @@ function copy_to_clipboard(e, selector) {
     }
 }
 
+function delete_search_parameter(name, action) {
+    try {
+        if ("URLSearchParams" in window) {
+            // Vars
+            var parameters = new URLSearchParams(window.location.search);
+
+            // Delete search parametereter
+            parameters.delete(name);
+
+            // Check if
+            if (check_value_defined(parameters.toString())) {
+                // Vars
+                var new_url = window.location.pathname + "?" + parameters.toString();
+            } else {
+                // Vars
+                var new_url = window.location.pathname;
+            }
+
+            // Check if
+            if (!get_search_parameter(name) || action == "replace") {
+                // Replace history
+                history.replaceState("", "", new_url);
+            } else if (action == "update") {
+                // Update history
+                history.pushState("", "", new_url);
+            }
+        }
+    } catch (e) {
+        // console.error(e);
+    }
+}
+
 function format_number_decimals(value) {
     try {
         // Check if
@@ -168,6 +200,30 @@ function get_change_direction(value) {
     return change_direction;
 }
 
+function get_search_parameter(name) {
+    // Define vars
+    var parameter = false;
+
+    try {
+        // Vars
+        var href = window.location.pathname + window.location.search;
+        var search_parameters = href.split("?");
+        search_parameters = search_parameters[1];
+
+        // Check if
+        if ("URLSearchParams" in window) {
+            // Search parameters
+            var parameters = new URLSearchParams(search_parameters);
+            parameter = check_value_defined(parameters.get(name));
+        }
+    } catch (e) {
+        // console.log(e);
+    }
+
+    // Return
+    return parameter;
+}
+
 function init_anchor_tags() {
     try {
         // On click
@@ -245,6 +301,48 @@ function throttle(callback, limit) {
                     // False
                     wait = false;
                 }, limit);
+            }
+        }
+    } catch (e) {
+        // console.error(e);
+    }
+}
+
+function update_search_parameters(parameters_array, action) {
+    try {
+        // Check if
+        if ("URLSearchParams" in window) {
+            // Search parameters
+            var parameters = new URLSearchParams(window.location.search);
+
+            // Check if
+            if (check_array_defined(parameters_array)) {
+                // Loop
+                $.each(parameters_array, function (index, value) {
+                    // Check if
+                    if (value.name && value.value) {
+                        // Set parameters
+                        parameters.set(value.name, value.value);
+                    }
+                });
+
+                // New url
+                if (check_value_defined(parameters.toString())) {
+                    // Vars
+                    var new_url = window.location.pathname + "?" + parameters.toString();
+                } else {
+                    // Vars
+                    var new_url = window.location.pathname;
+                }
+
+                // Check if
+                if (action) {
+                    // Update history
+                    history.pushState("", "", new_url);
+                } else {
+                    // Replace history
+                    history.replaceState("", "", new_url);
+                }
             }
         }
     } catch (e) {
