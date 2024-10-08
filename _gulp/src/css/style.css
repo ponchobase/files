@@ -1244,6 +1244,7 @@ section.home .left .description {
   font-size: 24px;
   font-size: 1.2rem;
   line-height: 1.85rem;
+  margin-bottom: 20px;
 }
 section.home .left .links {
   display: inline-block;
